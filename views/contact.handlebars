@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kaitlyn Fulmore | Photographer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/burger.css">
+    <script src="https://kit.fontawesome.com/d777cd8cbd.js" crossorigin="anonymous"></script>
+    <style>
+        nav{
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <nav class="myNav">
+        <ul>
+            <!-- portfolio dropdown container -->
+            <div class="portfolio-dp">
+                <li><a id="dp-dn1" href="#"><span class="nav-span">Portfolio</span></a></li>
+                <div class="portfolio-content" id='pfc'>
+                    <a class="dp-link" href="grad.html">Graduation</a>
+                    <a class="dp-link" href="portrait.html">Portrait</a>
+                    <a class="dp-link" href="sport.html">Sport</a>
+                </div>
+            </div>  
+            <!-- info dropdown container -->
+            <div class="info-dp">
+                <li><a id="dp-dn2" href="#"><span class="nav-span">Info</span></a></li>
+                <div class="info-content" id="ic">
+                    <a class="dp-link" href="price.html">Investment</a>
+                    <a class="dp-link" href="/testimonials">Testimonials</a>
+                    <a class="dp-link" href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <div class="nav-header"><a href="/"><h3>Fulmore <br>Photography</h3></a></div>
+            <li class="nav-about"><a href="about.html"><span class="nav-span">About Me</span></a></li>
+            <li><a href="/contact"><span class="nav-span">Contact</span></a></li>
+        </ul>
+        <!-- burger -->
+        <div class="burger-background"></div>
+            <div id="burger" class="burger burger-squeeze">
+                <div class="burger-lines"></div>
+            </div>
+    </nav>
+    <section class="wrapper">
+        <div class="left-wrap"></div>
+        <div class="right-wrap"></div>
+        <div class="contact-div">
+            <div class="header-container">
+                <h2>{{msg}}</h2>
+                {{#if default}}
+                <h3>Get in touch.</h3>
+                <p>Want to book me or have some questions? Let's talk!</p>
+                {{/if}}
+            </div>
+            {{#if default}}
+            <div class="form-container">
+                <h4>Drop me a line.</h4>
+                <form action="/contact/sent" method="POST">
+                    <label for="name">Your name</label>
+                    <input name="name" type="text" placeholder="Please enter your name.">
+                    <label for="email">Email</label>
+                    <input name="email" type="text" placeholder="Please enter your email.">
+                    <label for="subject">Subject</label>
+                    <div class="select-container">
+                        <select name="subject" id="subject">
+                            <option value="Booking a Session">Book Session</option>
+                            <option value="Question Inquiry">Have a Question</option>
+                            <option value="Other Inquiry">Other</option>
+                        </select>
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Please enter your message."></textarea>
+                    <input id="submit" type="submit">
+                </form>
+            </div>
+            {{/if}}
+        </div>
+        <div class="additional-div">
+            <div class="header-container2">
+                <h4>Or check out these resources</h4>
+            </div>
+            <div class="container-one">
+                <div class="link-container">
+                    <a target= '_blank' href="https://instagram.com/fulmorephotography?igshid=15422guh3y3wv"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/gigglingkaitlyn?s=21" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.facebook.com/fulmorephotography" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/kaitlyn-fulmore-73043a209" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+                <div class="inner-text">
+                    <h5>Reach out</h5>
+                    <p>Want to reach me another way? Why not reach out on social media.</p>
+                </div>
+            </div>
+            <div class="container-two">
+                <div class="img-container">
+                    <a href="/FAQ"><img src="/images/questionmark.png" alt="Image of a question mark."></a>
+                </div>
+                <div class="inner-text">
+                    <h5>Check out the FAQ</h5>
+                    <p>Answers to my most asked questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mnav-container" id="mnav-container">
+        <div class="mnav-mdivider">
+            <a href="/"><h3>Fulmore <br>Photography</h3></a>
+        </div>
+        <div class="list-container">
+            <ul class="mobile-menu">
+                <li><a href="#">Portfolio</a><i class="fas fa-angle-right arrowOne"></i></li>
+                <ul class="sub-menu-one" id="menu-one">
+                    <li class="sub-link"><a href="/graduation">Graduation</a></li>
+                    <li class="sub-link"><a href="/portrait">Portrait</a></li>
+                    <li class="sub-link"><a href="/sport">Sport</a></li>
+                </ul>
+                <div class="menu-divider"></div>
+                <li><a href="#">Info</a><i class="fas fa-angle-right arrowTwo"></i></li>
+                <ul class="sub-menu-two" id="menu-two">
+                    <li class="sub-link-two"><a href="/investment">Investment</a></li>
+                    <li class="sub-link-two"><a href="/testimonials">Testimonials</a></li>
+                    <li class="sub-link-two"><a href="/faq">FAQ</a></li>
+                </ul>
+                <div class="menu-divider"></div>
+                <li><a href="/about">About Me</a></li>
+                <div class="menu-divider"></div>
+                <li><a href="/contact">Contact</a></li>
+                <div class="menu-bottom-divider"></div>
+            </ul>
+        </div>
+    </div>
+    <div id="footer" class="foot-container">
+        <div class="top-footer">
+            <div class="fulmore-container">
+                <h3>Fulmore <br>Photography</h3>
+                <div class="footer-info">
+                    <p><i class="fas fa-mobile-alt"></i> (540) 642-6906</p>
+                    <p><i class="fas fa-envelope"></i> fulmoreka@mymail.vcu.edu</p>
+                </div>
+            </div>
+            <div class="product-container">
+                    <h4>Product</h4>
+                    <p>Graduation</p>
+                    <p>Portraits</p>
+                    <p>Sports</p>
+            </div>
+            <div class="resources-container">
+                <h4>Resources</h4>
+                <p>Testimonials</p>
+                <p>Investment</p>
+                <p>FAQ</p>
+            </div>
+            <div class="company-container">
+                <h4>Company</h4>
+                <p>Contact Me</p>
+                <p>About Me</p>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="left-bottom-container">
+                <p>Copyright 2021 Fulmore Photography</p>
+            </div>
+            <div class="right-bottom-container">
+                <a target= '_blank' href="https://instagram.com/fulmorephotography?igshid=15422guh3y3wv"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://twitter.com/gigglingkaitlyn?s=21" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/fulmorephotography" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/kaitlyn-fulmore-73043a209" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+    </div>  
+</body>
+<script src="nav.js"></script>
+</html>

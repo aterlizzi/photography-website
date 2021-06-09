@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+
+:root{
+    --clr-primary-light: #EEEEEE;
+    --clr-primary: #8c8c8c;
+    --clr-accent: #929e89;
+    --clr-accent-two: #a2c488;
+    --clr-accent-three: #D1E2C4;
+
+    --ff-primary: 'Alegreya', serif;
+    --ff-paragraph: 'Montserrat', sans-serif;
+}
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--ff-paragraph);
+}
+.wrapper{
+    position: relative;
+    padding: 1em;
+}
+.form-container{
+    background: white;
+    width: min(90%, 30em);
+    padding: 3em;
+    border-radius: 1em;
+}
+.form-container::before{
+    content: '';
+    background: var(--clr-accent);
+    position: absolute;
+    height: 570px;
+    width: 70%;
+    border-radius: 1em;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-top: 1em;
+    margin-bottom: -.1em;
+    font-weight: 600;
+    font-size: .9em;
+}
+input{
+    padding: .5em;
+    border: solid var(--clr-accent) 1px;
+    font-size: .9em;
+}
+input:focus{
+    outline: solid var(--clr-accent) 1px;
+}
+.submit{
+    color: white;
+    background: var(--clr-accent);
+    border: none;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+    width: 50%;
+    margin-top: 1em;
+    padding: .5em;
+}
+@media(min-width: 420px){
+    .form-container::before{
+        height:520px;
+        width: 67%;
+        right: 5%;
+    }
+}

@@ -1,0 +1,157 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+
+.foot-container{
+    background-color: grey;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.top-footer{
+    height: 66.333%;
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.fulmore-container{
+    width: 35%;
+}
+.product-container, .resources-container, .company-container{
+    width: 21.6667%;
+    display: flex;
+    justify-content: left;
+    padding-top: 50px;
+}
+.product-container h4, .resources-container h4, .company-container h4{
+    color: #EEEEEE;
+    font-family: 'Alegreya', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    padding-bottom: 10px;
+    margin-left: 35%;
+}
+.product-container p, .resources-container p, .company-container p{
+    margin-left: 35%;
+    line-height: 15px;
+    color: #b4b3b3;
+    font-size: 1vw;
+    font-family: 'Alegreya', serif;
+}
+.fulmore-container h3{
+    padding-top: 50px;
+    font-family: 'Rock Salt', sans-serif;
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 2vw;
+}
+.footer-info{
+    margin-top: 30px;
+}
+.fulmore-container p{
+    font-family: 'Alegreya', serif;
+    color: #b4b3b3;
+    letter-spacing: 1px;
+    margin-left: 30%;
+    line-height: 15px;
+    font-size: 1vw;
+}
+.product-container{
+    display: block;
+}
+.resources-container{
+    display: block;
+}
+.company-container{
+    display: block;
+}
+.bottom-footer{
+    height: 33.333%;
+    border-top: 1px solid #EEEEEE;;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+.left-bottom-container, .right-bottom-container{
+    width: 33.333%;
+}
+.right-bottom-container{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left-bottom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #EEEEEE;
+    font-family: 'Alegreya', serif;
+}
+#footer i{
+    color: #EEEEEE;
+}
+#footer .bottom-footer i{
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+#footer .bottom-footer i:hover{
+    color: #c4c4c4;
+}
+@media only screen and (max-width: 770px){
+    .fulmore-container p{
+        font-family: 'Alegreya', serif;
+        color: #b4b3b3;
+        letter-spacing: 1px;
+        margin-left: 30%;
+        line-height: 15px;
+        font-size: 1.2vw;
+    }
+    .product-container p, .resources-container p, .company-container p{
+        margin-left: 35%;
+        line-height: 15px;
+        color: #b4b3b3;
+        font-size: 1.6vw;
+    }
+    .fulmore-container h3{
+        font-size: 3vw;
+    }
+    .fulmore-container p{
+        font-size: 1.6vw;
+    }
+    .product-container h4, .resources-container h4, .company-container h4{
+        font-size: 1.8vw;
+    }
+    .left-bottom-container{
+        font-size: 1.6vw;
+    }
+    #footer .fulmore-container i{
+        display: none;
+    }
+}
+@media only screen and (max-width: 550px){
+    .fulmore-container{
+        display: none;
+    }
+    .product-container h4, .resources-container h4, .company-container h4{
+        font-size: 2.3vw;
+        margin-left: 5%;
+    }
+    .product-container p, .resources-container p, .company-container p{
+        font-size: 2vw;
+        margin-left: 5%;
+    }
+}
+

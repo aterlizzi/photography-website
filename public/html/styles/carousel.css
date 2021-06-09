@@ -1,0 +1,13 @@
+/* .carousel-container{
+    height: 100vh;
+    overflow: hidden;
+} */
+.carousel-item{
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: #777;
+    width: 100%;
+}
+.carousel-item img{
+    width: 100%;
+}

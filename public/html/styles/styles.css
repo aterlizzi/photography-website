@@ -1,0 +1,355 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* scroll in styling */
+.come-in{
+    transform: translateY(150px);
+    animation: come-in .8s ease forwards;
+}
+.come-in:nth-child(odd){
+    animation-duration: 0.6s;
+}
+/* start of css styling */
+body{
+    background-color: #EEEEEE !important;
+}
+.overflow-wrap{
+    overflow-x: hidden;
+}
+
+.collage-container a{
+    text-decoration: none;
+}
+/* divider styling */
+.mid-divider, .last-divider, .second-divider{
+    width: 100%;
+    height: 15vh;
+    background-color: #EEEEEE;
+}
+.mid-divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #8c8c8c;
+    height: 20vh;
+    font-family: 'Alegreya', serif;
+    text-transform: uppercase;
+}
+.mid-divider h3{
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+}
+.mid-divider span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7vw;
+    letter-spacing: 3px;
+}
+
+.divide-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #EEEEEE;
+}
+.dividing-line{
+    width: 60%;
+    height: 1px;
+    background-color: #8c8c8c;
+    margin-top: 100px;
+}
+
+/* end of divider styling */
+.collage-container, .mini-about{
+    width: 100%;
+    height: 70vh;
+    /* background-color: lightblue; */
+    background-color: #EEEEEE;
+}
+/* start of photo collage */
+.left-collage, .right-collage{
+    width: 40vw;
+    /* background-color: lightgreen; */
+    background-color: #EEEEEE;
+    height: 100%;
+}
+.left-collage{
+    margin-right: 10px
+}
+.right-collage{
+    margin-left: 10px;
+}
+.collage-container{
+    display: flex;
+    justify-content: center;
+}
+.top-container{
+    width: 100%;
+    height: 33%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.about-img-container, .portrait-img-container{
+    width: 47.5%;
+    /* background-color: purple; */
+    height: 100%;
+}
+.portrait-img-container{
+    background-image: url(../images/portrait-link-optimized.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.about-img-container{
+    /* background-image: url(../images/about-link-optimization.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #8c8c8c; */
+    background-color: #D1E2C4;
+    outline: .25em solid white;
+    outline-offset: -1em;
+}
+.test-container{
+    /* background-image: url(../images/test-link-optimization.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8c8c8c; */
+    background-color: #D1E2C4;
+    outline: .25em solid white;
+    outline-offset: -1em;
+}
+.contact-container{
+    /* background-image: url(../images/contact-link-optimization.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8c8c8c; */
+    background-color: #D1E2C4;
+    outline: .25em solid white;
+    outline-offset: -1em;
+}
+.sport-img-container{
+    /* background-color: purple; */
+    width: 100%;
+    height: 62%;
+    background-image: url(../images/sports-link-optimization.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+.sport-img-container, .grad-img-container, .about-img-container, .portrait-img-container, .contact-container, .test-container{
+    transition: transform 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #EEEEEE;
+    font-family: 'Alegreya', serif;
+    cursor: pointer;
+    font-size: 4vw;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .3);
+    letter-spacing: 3px;
+}
+.contact-container, .test-container, .about-img-container, .portrait-img-container{
+    font-size: 2vw !important;
+}
+.sport-img-container:hover, .grad-img-container:hover, .about-img-container:hover, .portrait-img-container:hover, .contact-container:hover, .test-container:hover{
+    transform: scale(.97);
+}
+.bottom-container{
+    width: 100%;
+    height: 33%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.grad-img-container{
+    /* background-color: purple; */
+    width: 100%;
+    height: 62%;
+    background-image: url(../images/grad-link-optimized.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-container, .test-container{
+    width: 47.5%;
+    /* background-color: purple; */
+    height: 100%;
+}
+/* start mini about  */
+.mini-about{
+    display: flex;
+}
+.left-container{
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    padding-right: 2vw;
+}
+.right-container{
+    width: 50%;
+    height: 100%;
+    padding-right: 15vw;
+}
+.mini-about img {
+    max-height: 98%;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+/* bio text styling */
+.title{
+    padding-left: 2vw;
+}
+.title h2{
+    font-family: 'Alegreya', serif;
+    color: #8c8c8c;
+    font-size: 5vw;
+}
+.title .subtitle-bio {
+    font-family: 'Alegreya', serif;
+    color: #8c8c8c;
+    font-size: 3vw;
+}
+.bio-text{
+    font-family: 'Alegreya', serif;
+    color: #8c8c8c;
+    font-size: 1.2vw;
+}
+/* end of mini about */
+
+/* beginning of media queries for bio */
+@media only screen and (max-width: 1110px){
+    .title h2{
+        font-size: 6vw;
+    }
+    .title .subtitle-bio{
+        font-size: 3vw;
+    }
+    .bio-text{
+        font-size: 1.5vw;
+    }
+    .mid-divider h3{
+        font-size: 2vw;
+        letter-spacing: 3px;
+    }
+    .mid-divider span{
+        font-size: 1vw;
+        letter-spacing: 3px;
+    }
+}
+@media only screen and (max-width: 830px){
+    .title h2{
+        font-size: 6vw;
+    }
+    .title .subtitle-bio{
+        font-size: 3vw;
+    }
+    .bio-text{
+        font-size: 1.8vw;
+    }
+    .right-container{
+        padding-right: 10vw;
+    }
+}
+@media only screen and (max-width: 770px){
+    .collage-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+    }
+    .left-collage, .right-collage{
+        margin: 0;
+        width: 90%;
+    }
+    .bottom-container{
+        margin-top: 6.5px;
+    }
+    .top-container{
+        margin-bottom: 6.5px;
+    }
+    .about-img-container, .portrait-img-container, .contact-container, .test-container{
+        width: 49.5%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 750px){
+    .mini-about{
+        display: block;
+        height: auto;
+    }
+    .mini-about img{
+        max-width: 50vw;
+    }
+    .left-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .right-container{
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: left;
+        padding-left: 1;
+        text-align: center;
+        padding: 0 75px 0 75px;
+    }
+    .title h2{
+        font-size: 8vw;
+    }
+    .title .subtitle-bio{
+        font-size: 5vw;
+    }
+    .bio-text{
+        padding-top: 5px;
+        font-size: 2.5vw;
+    }
+    .contact-container, .test-container, .about-img-container, .portrait-img-container{
+        font-size: 3vw !important;
+    }
+}
+@media only screen and (max-width: 600px){
+    .title h2{
+        font-size: 8vw;
+    }
+    .title .subtitle-bio{
+        font-size: 5vw;
+    }
+    .bio-text{
+        padding-top: 5px;
+        font-size: 3vw;
+    }
+    .mid-divider h3{
+        font-size: 2.5vw;
+        letter-spacing: 3px;
+    }
+    .mid-divider span{
+        font-size: 1.5vw;
+        letter-spacing: 3px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .sport-img-container, .grad-img-container, .about-img-container, .portrait-img-container, .contact-container, .test-container{
+        font-size: 10vw;
+    }
+    .contact-container, .test-container, .about-img-container, .portrait-img-container{
+        font-size: 4vw !important;
+    }
+}
+@keyframes come-in{
+    to {
+        transform: translateY(0);
+    }
+}
