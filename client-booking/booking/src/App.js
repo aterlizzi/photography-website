@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NavComponent from './components/NavComponent';
 import FooterComponent from './components/FooterComponent';
 import Months from './components/Months';
-import CalendarComp from './components/Calendar';
+import CalendarComp from './components/CalendarComp';
 import Auth from './components/Auth';
 
 
