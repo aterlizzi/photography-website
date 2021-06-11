@@ -109,8 +109,8 @@ function Auth({ match, history }) {
                         <label htmlFor="email">Email:</label>
                         <input type="email" name="email" placeholder="ex. jd@gmail.com" onChange={handleChange} required/>
                         <input className="submit" type="submit" value="Create Booking"/>
-                        <Link to="/"><button className="return-btn">Return</button></Link>
-                    </form>) : (<div className="success-container"><h3>Success! You're booked for {dayNum} {monthName} at {time}!</h3><br/><p>Didn't mean to book or want to update it? No problem! Send me an email in the contact page or wait until I send a follow up email!</p><Link to="/"><button className="return-btn">Return</button></Link></div>)
+                        <Link to="/booking"><button className="return-btn">Return</button></Link>
+                    </form>) : (<div className="success-container"><h3>Success! You're booked for {dayNum} {monthName} at {time}!</h3><br/><p>Didn't mean to book or want to update it? No problem! Send me an email in the contact page or wait until I send a follow up email!</p><Link to="/booking"><button className="return-btn">Return</button></Link></div>)
                     }
                 </div> 
             </div>) :

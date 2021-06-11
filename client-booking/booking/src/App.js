@@ -48,7 +48,7 @@ function App() {
             <>
                 <NavComponent />
                 <Switch>
-                    <Route path='/'  exact render={() => (
+                    <Route path='/booking'  exact render={() => (
                         <section className = 'grid-container flex-center'>
                             {renderHeader ?             
                             (<><header className="flex-center header">
@@ -61,8 +61,8 @@ function App() {
                             : (<CalendarComp month={clickedMonth} handleExitClick={handleExitClick} year={clickedYear} />)}
                         </section>
                     )}/>
-                    <Route path="/auth/" exact component={Auth}/>
-                    <Route path="/" render={() => <div>Error 404: Page not found.</div>}/>
+                    <Route path="/booking/auth" exact component={Auth}/>
+                    <Route path="/booking/" render={() => <div>Error 404: Page not found.</div>}/>
                 </Switch>
                 <FooterComponent />
             </>

@@ -60,7 +60,7 @@ function Day({ value, year }) {
                     {
                         state.filter(obj => parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 12 && parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) > 8).map(filterObj => (
                             <Link to={{
-                                pathname: '/auth/',
+                                pathname: '/booking/auth/',
                                 state: {
                                     startAt: filterObj.startAt,
                                     locationId: filterObj.locationId,
@@ -85,7 +85,7 @@ function Day({ value, year }) {
                     {
                         state.filter(obj => parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) >= 12 || parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 9).map(filterObj => (
                             <Link to={{
-                                pathname: '/auth/',
+                                pathname: '/booking/auth/',
                                 state: {
                                     startAt: filterObj.startAt,
                                     locationId: filterObj.locationId,

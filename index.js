@@ -40,6 +40,9 @@ app.get('/contact', (req, res) => {
 app.get('/testimonials', (req, res) => {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 })
+app.get('/booking', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client-booking/booking/build', 'index.html'))
+})
 
 // ROUTES for booking.
 
@@ -189,6 +192,9 @@ app.use(express.static(path.join(__dirname, 'public/html'), {
     extensions: ['html', ''],
 }));
 app.use(express.static(path.join(__dirname, 'client/build'), {
+    extensions: ['html', ''],
+}))
+app.use(express.static(path.join(__dirname, 'client-booking/booking/build'), {
     extensions: ['html', ''],
 }))
 
