@@ -6,7 +6,7 @@ function footerComponent() {
             <div id="footer" className="foot-container">
                 <div className="top-footer">
                     <div className="fulmore-container">
-                        <h3>Fulmore <br/>Photography</h3>
+                        <a href="/"><h3>Fulmore <br/>Photography</h3></a>
                         <div className="footer-info">
                             <p><i className="fas fa-mobile-alt"></i> (540) 642-6906</p>
                             <p><i className="fas fa-envelope"></i> fulmoreka@mymail.vcu.edu</p>
@@ -14,20 +14,20 @@ function footerComponent() {
                     </div>
                     <div className="product-container">
                             <h4>Product</h4>
-                            <p>Graduation</p>
-                            <p>Portraits</p>
-                            <p>Sports</p>
+                            <a href="/graduation"><p>Graduation</p></a>
+                            <a href="/portrait"><p>Portraits</p></a>
+                            <a href="/sport"><p>Sports</p></a>
                     </div>
                     <div className="resources-container">
                         <h4>Resources</h4>
-                        <p>Testimonials</p>
-                        <p>Investment</p>
-                        <p>FAQ</p>
+                        <a href="/testimonials"><p>Testimonials</p></a>
+                        <a href="/investment"><p>Investment</p></a>
+                        <a href="/faq"><p>FAQ</p></a>
                     </div>
                     <div className="company-container">
                         <h4>Company</h4>
-                        <p>Contact Me</p>
-                        <p>About Me</p>
+                        <a href="/contact"><p>Contact Me</p></a>
+                        <a href="/about"><p>About Me</p></a>
                     </div>
                 </div>
                 <div className="bottom-footer">

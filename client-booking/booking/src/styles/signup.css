@@ -63,11 +63,20 @@ input:focus{
     color: white;
     background: var(--clr-accent);
     border: none;
-    border-bottom-right-radius: 2em;
-    border-top-right-radius: 2em;
-    width: 50%;
+    width: 100%;
     margin-top: 1em;
+    margin-bottom: .3em;
     padding: .5em;
+}
+.return-btn{
+    padding: .5em 2.7em;
+    width: 100%;
+    font-family: var(--ff-paragraph);
+    font-size: .9em;
+    color: white;
+    background: var(--clr-accent);
+    border: none;
+    outline: none;
 }
 @media(min-width: 420px){
     .form-container::before{
