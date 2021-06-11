@@ -29,7 +29,7 @@ async function searchAvail(startDate, endDate){
           }
         });
       
-        console.log(response.result.availabilities[0].appointmentSegments);
+        console.log(response.result);
         return response.result;
       } catch(error) {
         return null;

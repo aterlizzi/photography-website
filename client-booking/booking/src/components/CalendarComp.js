@@ -30,8 +30,8 @@ function CalendarComp({ month, handleExitClick, year }) {
 
 
     return (
-            <div className="calendar-container">
-                <div className="left-container">
+            <div className="calendar-container" style={init ? {justifyContent: 'space-between'} : {justifyContent:'center', width: 'min(90%, 40em)'}}>
+                <div className="left-container" style={init ? null : {width: '100%'}}>
                     <div className="month-container"><h2>{month} {year}</h2></div>
                     <Calendar 
                         onChange={onChange}
