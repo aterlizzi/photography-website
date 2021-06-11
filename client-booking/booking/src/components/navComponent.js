@@ -19,6 +19,7 @@ function navComponent() {
                         <a className="dp-link" href="/investment">Investment</a>
                         <a className="dp-link" href="/testimonials">Testimonials</a>
                         <a className="dp-link" href="/faq">FAQ</a>
+                        <a className="dp-link" href="/booking">Booking</a>
                     </div>
                 </div>
                 <div className="nav-header"><a href="/"><h3>Fulmore <br/>Photography</h3></a></div>
@@ -48,6 +49,7 @@ function navComponent() {
                         <li className="sub-link-two"><a href="/investment">Investment</a></li>
                         <li className="sub-link-two"><a href="/testimonials">Testimonials</a></li>
                         <li className="sub-link-two"><a href="/faq">FAQ</a></li>
+                        <li className="sub-link-two"><a href="/booking">Booking</a></li>
                     </ul>
                     <div className="menu-divider"></div>
                     <li><a href="/about">About Me</a></li>

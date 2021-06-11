@@ -37,34 +37,35 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
   <!-- beginning of nav -->
     <nav class="myNav">
-      <ul>
-          <!-- portfolio dropdown container -->
-          <div class="portfolio-dp">
-              <li><a id="dp-dn1" href="#"><span class="nav-span">Portfolio</span></a></li>
-              <div class="portfolio-content" id='pfc'>
-                  <a class="dp-link" href="/graduation">Graduation</a>
-                  <a class="dp-link" href="/portrait">Portrait</a>
-                  <a class="dp-link" href="/sport">Sport</a>
-              </div>
-          </div>  
-          <!-- info dropdown container -->
-          <div class="info-dp">
-              <li><a id="dp-dn2" href="#"><span class="nav-span">Info</span></a></li>
-              <div class="info-content" id="ic">
-                  <a class="dp-link" href="/investment">Investment</a>
-                  <a class="dp-link" href="/testimonials">Testimonials</a>
-                  <a class="dp-link" href="/faq">FAQ</a>
-              </div>
-          </div>
-          <div class="nav-header"><a href="/"><h3>Fulmore <br>Photography</h3></a></div>
-          <li class="nav-about"><a href="/about"><span class="nav-span">About Me</span></a></li>
-          <li><a href="/contact"><span class="nav-span">Contact</span></a></li>
-      </ul>
-      <!-- burger -->
-      <div class="burger-background"></div>
-      <div id="burger" class="burger burger-squeeze">
-          <div class="burger-lines"></div>
-      </div>
+        <ul>
+            <!-- portfolio dropdown container -->
+            <div class="portfolio-dp">
+                <li><a id="dp-dn1" href="#"><span class="nav-span">Portfolio</span></a></li>
+                <div class="portfolio-content" id='pfc'>
+                    <a class="dp-link" href="/graduation">Graduation</a>
+                    <a class="dp-link" href="/portrait">Portrait</a>
+                    <a class="dp-link" href="/sport">Sport</a>
+                </div>
+            </div>  
+            <!-- info dropdown container -->
+            <div class="info-dp">
+                <li><a id="dp-dn2" href="#"><span class="nav-span">Info</span></a></li>
+                <div class="info-content" id="ic">
+                    <a class="dp-link" href="/investment">Investment</a>
+                    <a class="dp-link" href="/testimonials">Testimonials</a>
+                    <a class="dp-link" href="/faq">FAQ</a>
+                    <a class="dp-link" href="/booking">Booking</a>
+                </div>
+            </div>
+            <div class="nav-header"><a href="/"><h3>Fulmore <br>Photography</h3></a></div>
+            <li class="nav-about"><a href="/about"><span class="nav-span">About Me</span></a></li>
+            <li><a href="/contact"><span class="nav-span">Contact</span></a></li>
+        </ul>
+        <!-- burger -->
+        <div class="burger-background"></div>
+            <div id="burger" class="burger burger-squeeze">
+                <div class="burger-lines"></div>
+            </div>
     </nav>
     <!-- end of nav -->
     <!-- beginning of mobile nav design on toggle -->
@@ -86,6 +87,7 @@
                     <li class="sub-link-two"><a href="/investment">Investment</a></li>
                     <li class="sub-link-two"><a href="/testimonials">Testimonials</a></li>
                     <li class="sub-link-two"><a href="/faq">FAQ</a></li>
+                    <li class="sub-link-two"><a href="/booking">Booking</a></li>
                 </ul>
                 <div class="menu-divider"></div>
                 <li><a href="/about">About Me</a></li>
@@ -110,7 +112,7 @@
     <div id="footer" class="foot-container">
         <div class="top-footer">
             <div class="fulmore-container">
-                <h3>Fulmore <br>Photography</h3>
+                <a href="/"><h3>Fulmore <br>Photography</h3></a>
                 <div class="footer-info">
                     <p><i class="fas fa-mobile-alt"></i> (540) 642-6906</p>
                     <p><i class="fas fa-envelope"></i> fulmoreka@mymail.vcu.edu</p>
@@ -118,20 +120,21 @@
             </div>
             <div class="product-container">
                     <h4>Product</h4>
-                    <p>Graduation</p>
-                    <p>Portraits</p>
-                    <p>Sports</p>
+                    <a href="/graduation"><p>Graduation</p></a>
+                    <a href="/portrait"><p>Portraits</p></a>
+                    <a href="/sport"><p>Sports</p></a>
             </div>
             <div class="resources-container">
                 <h4>Resources</h4>
-                <p>Testimonials</p>
-                <p>Investment</p>
-                <p>FAQ</p>
+                <a href="/testimonials"><p>Testimonials</p></a>
+                <a href="/investment"><p>Investment</p></a>
+                <a href="/faq"><p>FAQ</p></a>
             </div>
             <div class="company-container">
                 <h4>Company</h4>
-                <p>Contact Me</p>
-                <p>About Me</p>
+                <a href="/contact"><p>Contact Me</p></a>
+                <a href="/about"><p>About Me</p></a>
+                <a href="/booking"><p>Book Me</p></a>
             </div>
         </div>
         <div class="bottom-footer">
@@ -141,11 +144,11 @@
             <div class="right-bottom-container">
                 <a target= '_blank' href="https://instagram.com/fulmorephotography?igshid=15422guh3y3wv"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://twitter.com/gigglingkaitlyn?s=21" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.facebook.com/fulmorephotography" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <i class="fab fa-facebook fa-2x"></i>
                 <a href="https://www.linkedin.com/in/kaitlyn-fulmore-73043a209" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
         </div>
-    </div>  
+    </div>
     <!-- start of js -->
     <!-- bootstrap js & more -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

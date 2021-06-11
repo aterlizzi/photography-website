@@ -28,6 +28,7 @@ function footerComponent() {
                         <h4>Company</h4>
                         <a href="/contact"><p>Contact Me</p></a>
                         <a href="/about"><p>About Me</p></a>
+                        <a href="/booking"><p>Book Me</p></a>
                     </div>
                 </div>
                 <div className="bottom-footer">
