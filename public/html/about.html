@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <title>About | Kaitlyn Fulmore | Photographer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/about.scss" />
+    <link rel="stylesheet" href="./styles/burger.css" />
+    <script
+      src="https://kit.fontawesome.com/d777cd8cbd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="myNav" style="background-color: transparent">
+      <ul>
+        <!-- portfolio dropdown container -->
+        <div class="portfolio-dp">
+          <li>
+            <a id="dp-dn1" href="#"><span class="nav-span">Portfolio</span></a>
+          </li>
+          <div class="portfolio-content" id="pfc">
+            <a class="dp-link" href="/graduation">Graduation</a>
+            <a class="dp-link" href="/portrait">Portrait</a>
+            <a class="dp-link" href="/sport">Sport</a>
+          </div>
+        </div>
+        <!-- info dropdown container -->
+        <div class="info-dp">
+          <li>
+            <a id="dp-dn2" href="#"><span class="nav-span">Info</span></a>
+          </li>
+          <div class="info-content" id="ic">
+            <a class="dp-link" href="/investment">Investment</a>
+            <a class="dp-link" href="/testimonials">Testimonials</a>
+            <a class="dp-link" href="/faq">FAQ</a>
+            <a class="dp-link" href="/booking">Booking</a>
+          </div>
+        </div>
+        <div class="nav-header">
+          <a href="/"
+            ><h3>Fulmore <br />Photography</h3></a
+          >
+        </div>
+        <li class="nav-about">
+          <a href="/about"><span class="nav-span">About Me</span></a>
+        </li>
+        <li>
+          <a href="/contact"><span class="nav-span">Contact</span></a>
+        </li>
+      </ul>
+      <!-- burger -->
+      <div class="burger-background"></div>
+      <div id="burger" class="burger burger-squeeze">
+        <div class="burger-lines"></div>
+      </div>
+    </nav>
+    <div class="mnav-container" id="mnav-container">
+      <div class="mnav-mdivider">
+        <a href="/"
+          ><h3>Fulmore <br />Photography</h3></a
+        >
+      </div>
+      <div class="list-container">
+        <ul class="mobile-menu">
+          <li>
+            <a href="#">Portfolio</a><i class="fas fa-angle-right arrowOne"></i>
+          </li>
+          <ul class="sub-menu-one" id="menu-one">
+            <li class="sub-link"><a href="/graduation">Graduation</a></li>
+            <li class="sub-link"><a href="/portrait">Portrait</a></li>
+            <li class="sub-link"><a href="/sport">Sport</a></li>
+          </ul>
+          <div class="menu-divider"></div>
+          <li>
+            <a href="#">Info</a><i class="fas fa-angle-right arrowTwo"></i>
+          </li>
+          <ul class="sub-menu-two" id="menu-two">
+            <li class="sub-link-two"><a href="/investment">Investment</a></li>
+            <li class="sub-link-two">
+              <a href="/testimonials">Testimonials</a>
+            </li>
+            <li class="sub-link-two"><a href="/faq">FAQ</a></li>
+            <li class="sub-link-two"><a href="/booking">Booking</a></li>
+          </ul>
+          <div class="menu-divider"></div>
+          <li><a href="/about">About Me</a></li>
+          <div class="menu-divider"></div>
+          <li><a href="/contact">Contact</a></li>
+          <div class="menu-bottom-divider"></div>
+        </ul>
+      </div>
+    </div>
+    <div id="footer" class="foot-container">
+      <div class="top-footer">
+        <div class="fulmore-container">
+          <a href="/"
+            ><h3>Fulmore <br />Photography</h3></a
+          >
+          <div class="footer-info">
+            <p><i class="fas fa-mobile-alt"></i> (540) 642-6906</p>
+            <p><i class="fas fa-envelope"></i> fulmoreka@mymail.vcu.edu</p>
+          </div>
+        </div>
+        <div class="product-container">
+          <h4>Product</h4>
+          <a href="/graduation"><p>Graduation</p></a>
+          <a href="/portrait"><p>Portraits</p></a>
+          <a href="/sport"><p>Sports</p></a>
+        </div>
+        <div class="resources-container">
+          <h4>Resources</h4>
+          <a href="/testimonials"><p>Testimonials</p></a>
+          <a href="/investment"><p>Investment</p></a>
+          <a href="/faq"><p>FAQ</p></a>
+        </div>
+        <div class="company-container">
+          <h4>Company</h4>
+          <a href="/contact"><p>Contact Me</p></a>
+          <a href="/about"><p>About Me</p></a>
+          <a href="/booking"><p>Book Me</p></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="left-bottom-container">
+          <p>Copyright 2021 Fulmore Photography</p>
+        </div>
+        <div class="right-bottom-container">
+          <a
+            target="_blank"
+            href="https://instagram.com/fulmorephotography?igshid=15422guh3y3wv"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://twitter.com/gigglingkaitlyn?s=21" target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <i class="fab fa-facebook fa-2x"></i>
+          <a
+            href="https://www.linkedin.com/in/kaitlyn-fulmore-73043a209"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="nav.js"></script>
+</html>
