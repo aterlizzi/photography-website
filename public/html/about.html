@@ -15,12 +15,13 @@
     />
     <link rel="stylesheet" href="./styles/nav.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/about.scss" />
+    <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/burger.css" />
     <script
       src="https://kit.fontawesome.com/d777cd8cbd.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <nav class="myNav" style="background-color: transparent">
@@ -102,6 +103,385 @@
         </ul>
       </div>
     </div>
+    <div class="wrapper flex">
+      <section class="about-section grid-one">
+        <div class="img-container center">
+          <img
+            src="./images/fulmore-optimized.jpg"
+            alt="Photo of Kaitlyn Fulmore."
+          />
+        </div>
+        <div class="content-container center">
+          <header class="name-header flex">
+            <p>About page</p>
+            <h1>Kaitlyn Fulmore</h1>
+            <h4>Photographer & Writer</h4>
+          </header>
+        </div>
+      </section>
+      <section class="body-section flex module">
+        <aside class="quote flex">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            quidem minima accusamus quia placeat beatae itaque repudiandae
+            repellendus voluptatibus. Minus.
+          </p>
+          <div class="quote-divide"></div>
+        </aside>
+        <p class="body-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur
+          ullam totam, repudiandae animi nobis libero iusto vel quo aperiam
+          earum repellat alias deleniti asperiores reiciendis nulla deserunt
+          assumenda obcaecati, consequuntur expedita neque explicabo! Maiores,
+          incidunt vel voluptas quasi, aperiam ipsum quidem facilis modi
+          blanditiis aliquam nihil. Tempore beatae reprehenderit autem. Fuga
+          deserunt aut repellendus id ratione dolorem doloremque repellat ex
+          magni, maxime, vero laudantium, maiores voluptate at dignissimos
+          quisquam harum magnam tempora commodi nam et iusto hic! Veritatis ea,
+          cupiditate, officiis omnis molestias illum aliquam quos architecto
+          quasi voluptatibus ratione adipisci, magni iusto sed culpa? Hic,
+          omnis, enim deserunt dolor maxime error consequatur, tempora vel porro
+          quidem perferendis consectetur! Aliquam fugit totam animi expedita
+          impedit debitis consectetur architecto molestias officia! Maiores nemo
+          architecto suscipit ipsum consequuntur ratione tempora, omnis ab hic
+          porro ut fugiat. Ut obcaecati itaque deleniti, aliquam a alias
+          sapiente laboriosam! Delectus ad, culpa sed dolorem libero ducimus,
+          odit perferendis accusamus officiis molestiae est nam expedita fuga!
+          Inventore, maiores dolores cumque rerum quod est aliquam fugiat
+          expedita incidunt dicta similique voluptates ex tempora nihil sit. Hic
+          molestias totam eaque voluptatem culpa reiciendis libero nobis,
+          accusantium molestiae nemo minus maxime recusandae repudiandae? Magni
+          exercitationem quis cumque alias odio.
+        </p>
+        <div class="quote-divide"></div>
+      </section>
+      <section class="works-section flex module">
+        <header class="works-header flex">
+          <h2>Featured Work</h2>
+          <p>
+            Below are several articles where either my photography or writing is
+            featured!
+          </p>
+        </header>
+        <div class="works-container grid-two">
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/kaitlynfulmore_feb4_education_0337.jpg"
+                alt="Woman studying in library."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>VCU community reacts to in-person return.</h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "VCU’s decision to allow some students back for in-person and
+                  hybrid classes on March 4 has been met with opposition by
+                  students and professors."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2021/03/03/vcu-community-reacts-to-in-person-return/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/blm-kaitlyn-about.jpg"
+                alt="Man smiling, sitting in front of his artwork."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>
+                  Black Lives Matter art show showcases social justice dialogue
+                </h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "A virtual art show organized by Richmond artists presents
+                  viewers with powerful self-portraits, experimental collages
+                  and political imagery, each demonstrating a unique take on the
+                  Black Lives Matter movement."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2021/02/17/black-lives-matter-art-show-showcases-social-justice-dialogue/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/food-kaitlyn-about.jpg"
+                alt="Woman volunteer helps local go through crate of food at a park."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>
+                  Richmond group utilizes grocery pickup in mission to end food
+                  insecurity
+                </h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "For years, a group of Richmond residents crammed inside a
+                  small house on Hanover Street every week, cooking nutritious
+                  meals for the city’s homeless and low-income population."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2020/11/18/richmond-group-utilizes-grocery-pickup-in-mission-to-end-food-insecurity/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/life-kaitlyn-about.jpg"
+                alt="Fire trucks and other emergency vehicles responding to a fire."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>
+                  Life sciences building to remain closed after fire at VCU
+                </h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "Dr. Tim Bajkiewicz, who teaches broadcast journalism at the
+                  neighboring T. Edward Temple Building, said he was walking to
+                  his classroom from the library when he saw the fire."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2020/11/18/life-sciences-building-to-remain-closed-after-fire-at-vcu/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/basketball-stock-about.jpg"
+                alt="Man shoots basketball from under the net."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>
+                  Meet the Team: men’s basketball’s young roster leads Rams into
+                  2020-21 campaign
+                </h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "Men’s basketball is gearing up for the approaching season
+                  nearly eight months after their last game and without a
+                  significant portion of last season’s offense."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2020/11/17/meet-the-team-mens-basketballs-young-roster-leads-rams-into-2020-21-campaign/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/fresh-kaitlyn-about.jpg"
+                alt="Two woman sit in field wearing masks while the leftmost woman speaks."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>Freshmen reflect on semester of limited socialization</h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "During a semester filled with uncertainty, freshmen at VCU
+                  navigated academic and social life while trying their best to
+                  adhere to safety precautions."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2020/11/11/freshmen-reflect-on-semester-of-limited-socialization/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/volleyball-kaitlyn-about.jpg"
+                alt="Students play volleyball at VCU."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>
+                  Volleyball tournament gives students opportunity to compete
+                </h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "With the sun behind Altria Theater, rap music playing from
+                  speakers and a slight breeze in the air, a student volleyball
+                  tournament in Monroe Park stopped passersby in their tracks.
+                  Some paused for a moment to enjoy the now-rare occurrence of
+                  casual and friendly competition."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2020/10/21/volleyball-tournament-gives-students-opportunity-to-compete/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/wbasketball-stock-about.jpg"
+                alt="Two women play basketball in an inside basketball court."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>
+                  BoostHer initiative to strengthen women’s sports community
+                </h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "A successful run in the Atlantic 10 championship brought
+                  women’s basketball to a second-place conference spot, and a
+                  new VCU initiative is ensuring that these accomplishments ––
+                  along with those of other women’s teams –– are equally
+                  highlighted and celebrated."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2020/10/07/boosther-initiative-to-strengthen-womens-sports-community/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/cs-kaitlyn-about.jpg"
+                alt="Two adults pose for a portrait with a robot."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>
+                  College of Engineering to offer computer science doctorate
+                  program
+                </h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "The College of Engineering will enroll the first cohort of
+                  students in its new computer science doctorate program
+                  beginning this fall, according to a university release."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2021/03/03/college-of-engineering-to-offer-computer-science-doctorate-program/"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="img-container">
+              <img
+                src="./images/meal-kaitlyn-about.jpg"
+                alt="Three women eat lunch on picnic table."
+              />
+            </div>
+            <div class="bottom-wrap flex">
+              <header class="article-title">
+                <h3>
+                  VCU implements changes to popular student dining locations
+                </h3>
+              </header>
+              <div class="thick-line"></div>
+              <div class="summary-container">
+                <p>
+                  "VCU has made major modifications to dining locations on
+                  campus as of Feb. 15, including closures and hour changes, in
+                  order to adapt to changing circumstances from the ongoing
+                  COVID-19 pandemic."
+                </p>
+              </div>
+            </div>
+            <div class="more-container flex">
+              <a
+                class="readmore-btn"
+                target="_blank"
+                href="https://commonwealthtimes.org/2021/02/24/vcu-implements-changes-to-popular-student-dining-locations/"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <div id="footer" class="foot-container">
       <div class="top-footer">
         <div class="fulmore-container">
@@ -156,4 +536,5 @@
     </div>
   </body>
   <script src="nav.js"></script>
+  <script src="index.js"></script>
 </html>

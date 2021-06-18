@@ -128,29 +128,22 @@ app.post('/contact/sent', body('email').isEmail().normalizeEmail(), body('name')
         case "Booking a Session": 
             options.text = `
             Hi ${name}!
-
             Thank you so much for reaching out to me. I would love to take your photos!
-
             I am available on XXXXXXXXXXXX and you can contact me at 540-642-6906.
-
             Looking forward to working with you,
             Fulmore`
             break;
         case "Question Inquiry":
             options.text = `
             Hi ${name}!
-
             I'll take a look at your question and reply as soon as I can!
-
             Best,
             Fulmore`
             break;
         case "Other Inquiry":
             options.text = `
             Hi ${name}!
-
             I'll take a look at your message and reply as soon as I can!
-
             Best,
             Fulmore`
             break;
@@ -200,5 +193,3 @@ app.use(express.static(path.join(__dirname, 'client-booking/booking/build'), {
 
 // middleware
 app.use(express.json());
-
-
