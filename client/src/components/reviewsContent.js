@@ -1,9 +1,7 @@
-import review1 from './images/review1.jpg';
-import review2 from './images/review2.jpg';
-import review3 from './images/review3.jpg';
-import review4 from './images/review4.jpg';
-import review5 from './images/review5.jpg';
-import review6 from './images/review6.jpg';
+import review1 from '../images/review1.jpg';
+import review2 from '../images/review2.jpg';
+import review3 from '../images/review3.jpg';
+
 
 
 

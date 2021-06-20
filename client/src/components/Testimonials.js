@@ -27,14 +27,14 @@ function Testimonials(){
         }
     }
     return (
-        <>
+        <div className="main-background">
             <div className="review-container">
                 <Image url={testArr[num].img}/>
                 <RightBox review={testArr[num].review} author={testArr[num].name} desc={testArr[num].desc}/>
                 <button onClick={clickHandler} type="button" name="left" className="left-btn-container"><i className="fas fa-chevron-left fa-lg"></i></button>
                 <button onClick={clickHandler} type="button" name="right" className="right-btn-container"><i className="fas fa-chevron-right fa-lg"></i></button>
             </div>
-        </>
+        </div>
     )
 }
 

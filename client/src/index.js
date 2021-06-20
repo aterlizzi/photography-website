@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Testimonials from './Testimonials';
+import FooterComponent from './components/FooterComponent';
+import NavComponent from './components/NavComponent';
+import Testimonials from './components/Testimonials';
 
-import './testimonials.css';
+
+import './styles/testimonials.css';
+import './styles/burger.css';
+import './styles/footer.css';
+import './styles/nav.css';
 
 function App(){
     return (
-        <Testimonials/>
+        <>
+            <NavComponent/>
+            <Testimonials/>
+            <FooterComponent/>
+        </>
     )
 }
 
