@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 
 
@@ -11,6 +11,14 @@ import quote from '../images/quotes.png';
 function Testimonials(){
     const [count, setCount] = useState(0);
 
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = './nav.js';
+        script.async = true;
+        document.body.appendChild(script);
+    }, []);
+
+    
     const decrement = () => {
         if (count === 0){
             setCount(3);
