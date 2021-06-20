@@ -1,38 +1,51 @@
 import React, {useState} from 'react';
 
-import Image from './Image';
-import RightBox from './RightBox';
 
 
 import {testArr} from './reviewsContent';
+import quote from '../images/quotes.png';
 
 
 
 
 function Testimonials(){
-    const [num, setNum] = useState(0);
-    const clickHandler = (e) => {
-        if (e.target.name === 'right'){
-            if (num === 2){
-                setNum(0);
-            } else {
-                setNum(num + 1);
-            }
-        } else if(e.target.name === 'left') {
-            if (num === 0){
-                setNum(5);
-            } else{
-                setNum(num - 1);
-            }
+    const [count, setCount] = useState(0);
+
+    const decrement = () => {
+        if (count === 0){
+            setCount(3);
+        } else {
+            setCount(count - 1);
         }
     }
+    const increment = () => {
+        if (count === 3){
+            setCount(0);
+        } else {
+            setCount(count + 1);
+        }
+    }
+
+
     return (
-        <div className="main-background">
-            <div className="review-container">
-                <Image url={testArr[num].img}/>
-                <RightBox review={testArr[num].review} author={testArr[num].name} desc={testArr[num].desc}/>
-                <button onClick={clickHandler} type="button" name="left" className="left-btn-container"><i className="fas fa-chevron-left fa-lg"></i></button>
-                <button onClick={clickHandler} type="button" name="right" className="right-btn-container"><i className="fas fa-chevron-right fa-lg"></i></button>
+        <div className="main-background center">
+            <div className="review-container grid-one">
+                <button onClick={decrement} type="button" name="left" className="left-btn-container absolute center"><i className="fas fa-chevron-left fa-lg"></i></button>
+                <button onClick={increment} type="button" name="right" className="right-btn-container absolute center"><i className="fas fa-chevron-right fa-lg"></i></button>
+                <div className="img-container">
+                    <img src={testArr[count].img} alt={testArr[count].alt}/>
+                </div>
+                <div className="quote-container flex-col center">
+                    <div className="top-container grid-two">
+                        <img src={quote} alt="" className="quote-1"/>
+                        <p className="review">{testArr[count].review}</p>
+                        <img src={quote} alt="" className="quote-2"/>
+                    </div>
+                    <div className="bottom-container flex-col">
+                        <h3 className="name">{testArr[count].name}</h3>
+                        <p className="desc">{testArr[count].desc}</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
