@@ -35,7 +35,7 @@ import p27 from "../images/p27.jpg";
 import p28 from "../images/p28.jpg";
 import p29 from "../images/p29.jpg";
 
-function GallerypComponent({ scrollPosition }) {
+function GalleryGraduationComponent({ scrollPosition }) {
   return (
     <section className="photo-container center">
       <div className="wrapper-grid">
@@ -253,4 +253,4 @@ function GallerypComponent({ scrollPosition }) {
   );
 }
 
-export default trackWindowScroll(GallerypComponent);
+export default trackWindowScroll(GalleryGraduationComponent);

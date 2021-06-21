@@ -3,7 +3,7 @@ import React from "react";
 function NavComponent() {
   return (
     <>
-      <nav className="myNav" style={{background: 'transparent'}}>
+      <nav className="myNav">
         <ul>
           <div className="portfolio-dp">
             <li>

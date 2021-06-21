@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import GallerySportComponent from './GallerySportComponent';
 
 
-function SportsComponent({ scrollPosition }) {
+function SportsComponent() {
     return (
         <>
             <section className="sort-container center flex-col">
