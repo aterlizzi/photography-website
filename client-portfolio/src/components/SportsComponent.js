@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function SportsComponent() {
+import GallerySportComponent from './GallerySportComponent';
+
+
+function SportsComponent({ scrollPosition }) {
     return (
         <>
             <section className="sort-container center flex-col">
@@ -14,13 +17,7 @@ function SportsComponent() {
                     </ul>
                 </header>
             </section>
-            <section className="photo-container">
-                <div className="wrapper-grid">
-                    <div className="grid-one grid"></div>
-                    <div className="grid-two grid"></div>
-                    <div className="grid-three grid"></div>
-                </div>
-            </section>
+            <GallerySportComponent/>
         </>
     )
 }

@@ -87,9 +87,49 @@ body {
   }
 }
 .photo-container {
+  padding: 2em 0.2em 2em 0.2em;
+  background: var(--clr-primary-light);
   .wrapper-grid {
+    max-width: 57.5em;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
+    align-items: start;
+    place-items: center;
+    gap: 0.2em;
+    .grid-one {
+      img {
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+    .grid-two {
+      img {
+        max-width: 400px;
+        width: 100%;
+      }
+    }
+    .grid-three {
+      img {
+        max-width: 400px;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (min-width: 700px) {
+  .photo-container {
+    .wrapper-grid {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: start;
+    }
+  }
+}
+@media (min-width: 920px) {
+  .photo-container {
+    .wrapper-grid {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+    }
   }
 }

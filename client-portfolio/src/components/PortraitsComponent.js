@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GalleryPortraitsComponent from './GalleryPortraitsComponent';
 
 function PortraitsComponent() {
     return (
@@ -14,13 +15,7 @@ function PortraitsComponent() {
                     </ul>
                 </header>
             </section>
-            <section className="photo-container">
-                <div className="wrapper-grid">
-                    <div className="grid-one"></div>
-                    <div className="grid-two"></div>
-                    <div className="grid-three"></div>
-                </div>
-            </section>
+            <GalleryPortraitsComponent/>
         </>
     )
 }
