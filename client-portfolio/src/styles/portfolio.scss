@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+
+:root {
+  --clr-primary-light: #eeeeee;
+  --clr-primary: #8c8c8c;
+  --clr-accent: #929e89;
+  --clr-accent-two: #a2c488;
+  --clr-accent-three: #d1e2c4;
+
+  --ff-primary: "Alegreya", serif;
+  --ff-paragraph: "Montserrat", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: var(--ff-paragraph);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5em;
+}
+
+// elemental classes
+
+.sort-container {
+  background: white;
+  padding: 1em;
+  color: var(--clr-primary);
+  .sort-header {
+    margin-top: 8em;
+    text-align: center;
+    h1 {
+      font-size: 1.75em;
+      padding-bottom: 1em;
+      border-bottom: solid lightgrey 1px;
+    }
+    .sort-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+      list-style: none;
+      .link {
+        position: relative;
+        padding-bottom: 0.2em;
+        padding-top: 0.5em;
+        text-decoration: none;
+        color: var(--clr-primary);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .link::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: var(--clr-accent);
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in-out;
+      }
+      .link:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+}
+.photo-container {
+  .wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+}
