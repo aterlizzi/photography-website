@@ -1,264 +1,267 @@
 /* font imports */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
 /* nav css */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-nav{
-    padding-top: 40px;
-    z-index: 3;
-    color: #8c8c8c;
-    position: absolute;
-    width: 100%;
-    font-size: 1.2vw;
-    background-color: #EEEEEE;
-    /* display: flex;
+nav {
+  padding-top: 40px;
+  z-index: 3;
+  color: #8c8c8c;
+  position: absolute;
+  width: 100%;
+  font-size: 1.2vw;
+  background-color: #eeeeee;
+  /* display: flex;
     align-items: center; */
 }
-nav ul{
-    text-decoration: none;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
+nav ul {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
 }
-nav li{
-    padding: 0 4rem;
-    padding-bottom: 12px;
-    text-decoration: none;
+nav li {
+  padding: 0 4rem;
+  padding-bottom: 12px;
+  text-decoration: none;
 }
-.nav-span{
-    border-bottom: solid .75em transparent;
+.nav-span {
+  border-bottom: solid 0.75em transparent;
 }
 .nav-span:hover {
-    box-shadow: 0 1px 0 -1px #EEEEEE;
+  box-shadow: 0 1px 0 -1px #eeeeee;
 }
-nav a{
-    /* font-family: 'Libre Baskerville', serif; */
-    font-family: 'Alegreya', serif;
-    /* font-family: 'Rock Salt', serif; */
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    color: #8c8c8c;
+nav a {
+  /* font-family: 'Libre Baskerville', serif; */
+  font-family: "Alegreya", serif;
+  /* font-family: 'Rock Salt', serif; */
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #8c8c8c;
 }
-nav a:link{
-    color: #8c8c8c;
-    text-decoration: none !important;
+nav a:link {
+  color: #8c8c8c;
+  text-decoration: none !important;
 }
 nav a:hover {
-    text-decoration: underline !important;
-    color: #8c8c8c !important;
+  text-decoration: underline !important;
+  color: #8c8c8c !important;
 }
-.nav-header h3{
-    text-align: center;
-    font-family: 'Rock Salt', serif;
-    font-size: 1.5vw !important;
-    text-transform: none;
-    letter-spacing:normal;
+.nav-header h3 {
+  text-align: center;
+  font-family: "Rock Salt", serif;
+  font-size: 1.5vw !important;
+  text-transform: none;
+  letter-spacing: normal;
 }
-.nav-header a:hover{
-    text-decoration: none !important;
+.nav-header a:hover {
+  text-decoration: none !important;
 }
-.nav-about{
-    text-align: center;
+.nav-about {
+  text-align: center;
 }
 /* end of nav */
 /* font awesome arrow css */
-.fa-angle-right{
-    color: #8c8c8c;
-    float: right;
+.fa-angle-right {
+  color: #8c8c8c;
+  float: right;
 }
-.fa-angle-right:hover{
-    cursor: pointer;
-    color: lightgrey;
-    transition: color 100ms ease-in 0s;
+.fa-angle-right:hover {
+  cursor: pointer;
+  color: lightgrey;
+  transition: color 100ms ease-in 0s;
 }
-.fa-angle-right-active{
-    transform: scaleX(-1);
+.fa-angle-right-active {
+  transform: scaleX(-1);
 }
 /* start of mobile nav */
 /* mnav fulmore title */
-.mnav-mdivider h3{
-    font-family: 'Rock Salt', cursive;
-    color: #8c8c8c;
-    font-size: 2.5vw;
-    padding-top: 30px;
-    /* padding-left: 3.5vw; */
-    padding-right: 3.5vw;
+.mnav-mdivider h3 {
+  font-family: "Rock Salt", cursive;
+  color: #8c8c8c;
+  font-size: 2.5vw;
+  padding-top: 30px;
+  /* padding-left: 3.5vw; */
+  padding-right: 3.5vw;
 }
-.mnav-container{
-    display: none;
-    background-color:#EEEEEE;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 50vw;
-    height: 100vh;
-    transform: translateX(50vw);
-    transition: transform 400ms ease-in 0s;
+.mnav-container {
+  display: none;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50vw;
+  height: 100vh;
+  transform: translateX(50vw);
+  transition: transform 400ms ease-in 0s;
 }
-.mnav-mdivider{
-    background-color: #EEEEEE;
-    height: 120px;
-    width: 100%;
-    text-align: center;
+.mnav-mdivider {
+  background-color: white !important;
+  height: 120px;
+  width: 100%;
+  text-align: center;
 }
-.mnav-mdivider a:hover{
-    text-decoration: none;
+.mnav-mdivider a:hover {
+  text-decoration: none;
 }
-.menu-bottom-divider{
-    background-color: #EEEEEE;
-    height: 100%;
-    width: 100%;
+.menu-bottom-divider {
+  background-color: white;
+  height: 100%;
+  width: 100%;
 }
-.mnav-container a{
-    color: #8c8c8c;
+.mnav-container a {
+  color: #8c8c8c;
 }
-.mnav-container a:hover{
-    color: #8c8c8c;
+.mnav-container a:hover {
+  color: #8c8c8c;
 }
-.mnav-container .mobile-menu{
-    font-size: 2vw;
-    font-family: 'Alegreya', serif;
-    color: #8c8c8c;
-    text-decoration: none;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    list-style: none;
+.mnav-container .mobile-menu {
+  font-size: 2vw;
+  font-family: "Alegreya", serif;
+  color: #8c8c8c;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  list-style: none;
 }
-.mnav-container li{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
+.mnav-container li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
 }
-.menu-divider{
-    width: 100%;
-    height: 1px;
-    background-color: lightgrey;
-    text-align: center;
+.menu-divider {
+  width: 100%;
+  height: 1px;
+  background-color: whitesmoke;
+  text-align: center;
 }
 /* sub menu drop on mobile */
-.sub-menu-one, .sub-menu-two{
-    list-style: none;
-    font-size: 1.8vw;
-    display: none;
+.sub-menu-one,
+.sub-menu-two {
+  list-style: none;
+  font-size: 1.8vw;
+  display: none;
 }
-.sub-menu-one li, .sub-menu-two li{
-    padding-left: 10px;
+.sub-menu-one li,
+.sub-menu-two li {
+  padding-left: 10px;
 }
-.sub-link, .sub-link-two{
-    opacity: 0;
-    transition: opacity 500ms ease-in 0s;
+.sub-link,
+.sub-link-two {
+  opacity: 0;
+  transition: opacity 500ms ease-in 0s;
 }
-.sub-link-active{
-    opacity: 1;
+.sub-link-active {
+  opacity: 1;
 }
 /* js toggle burger menu */
-.mnav-active{
-    transform: translateX(0);
+.mnav-active {
+  transform: translateX(0);
 }
-.menu-one-active, .menu-two-active{
-    display: block;
+.menu-one-active,
+.menu-two-active {
+  display: block;
 }
-
-
-
 
 /* start of drop down on hover */
-.portfolio-dp, .info-dp{
-    position: relative;
-    display: flex;
-    justify-content: center;
+.portfolio-dp,
+.info-dp {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
-.portfolio-content, .info-content{
-    margin-top: 2.7vw;
-    display: none;
-    position: absolute;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.25s linear;
-    background-color: #EEEEEE;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dp-link{
-    color: #8c8c8c !important;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-transform: capitalize;
+.portfolio-content,
+.info-content {
+  margin-top: 2.7vw;
+  display: none;
+  position: absolute;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.25s linear;
+  background-color: #eeeeee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.portfolio-content a:hover, .info-content a:hover{
-    background-color: #ddd;
+.dp-link {
+  color: #8c8c8c !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
 }
-.portfolio-dp:hover .portfolio-content{
-    display: block;
-    opacity: 1;
+
+.portfolio-content a:hover,
+.info-content a:hover {
+  background-color: #ddd;
 }
-.info-dp:hover .info-content{
-    display: block;
-    opacity: 1;
+.portfolio-dp:hover .portfolio-content {
+  display: block;
+  opacity: 1;
+}
+.info-dp:hover .info-content {
+  display: block;
+  opacity: 1;
 }
 /* end of drop down on hover */
 
-
 /* begin media queries */
 
-@media only screen and (max-width: 815px){
-    nav ul{
-        display: none;
-    }
-    .mnav-container{
-        display: block;
-    }
-    nav {
-        background-color: transparent;
-    }
+@media only screen and (max-width: 815px) {
+  nav ul {
+    display: none;
+  }
+  .mnav-container {
+    display: block;
+  }
+  nav {
+    background-color: transparent;
+  }
 }
-@media only screen and (max-width: 620px){
-    .mnav-container .mobile-menu{
-        font-size: 2.5vw;
-        font-family: 'Alegreya', serif;
-        color: #8c8c8c;
-        text-decoration: none;
-        letter-spacing: .2rem;
-        text-transform: uppercase;
-        list-style: none;
-    }
-    .sub-menu-one, .sub-menu-two{
-        list-style: none;
-        font-size: 2vw;
-    }
-    .mnav-container li{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .mnav-mdivider h3{
-        font-family: 'Rock Salt', cursive;
-        color: #8c8c8c;
-        font-size: 3vw;
-        padding-top: 30px;
-        padding-right: 4.5vw;
-    }
-    .mnav-mdivider{
-        background-color: #EEEEEE;
-        height: 100px;
-        width: 100%;
-    }
+@media only screen and (max-width: 620px) {
+  .mnav-container .mobile-menu {
+    font-size: 2.5vw;
+    font-family: "Alegreya", serif;
+    color: #8c8c8c;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    list-style: none;
+  }
+  .sub-menu-one,
+  .sub-menu-two {
+    list-style: none;
+    font-size: 2vw;
+  }
+  .mnav-container li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mnav-mdivider h3 {
+    font-family: "Rock Salt", cursive;
+    color: #8c8c8c;
+    font-size: 3vw;
+    padding-top: 30px;
+    padding-right: 4.5vw;
+  }
+  .mnav-mdivider {
+    background-color: #eeeeee;
+    height: 100px;
+    width: 100%;
+  }
 }
-@media only screen and (max-width: 450px){
-    .mnav-mdivider h3{
-        padding-left: 0;
-        padding-top: 40px;
-        font-size: 2.5vw;
-    }
+@media only screen and (max-width: 450px) {
+  .mnav-mdivider h3 {
+    padding-left: 0;
+    padding-top: 40px;
+    font-size: 2.5vw;
+  }
 }
-
