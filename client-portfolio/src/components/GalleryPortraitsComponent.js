@@ -34,6 +34,32 @@ import p26 from "../images/p26.jpg";
 import p27 from "../images/p27.jpg";
 import p28 from "../images/p28.jpg";
 import p29 from "../images/p29.jpg";
+import p30 from "../images/p30.jpg";
+import p31 from "../images/p31.jpg";
+import p32 from "../images/p32.jpg";
+import p33 from "../images/p33.jpg";
+import p34 from "../images/p34.jpg";
+import p35 from "../images/p35.jpg";
+import p36 from "../images/p36.jpg";
+import p37 from "../images/p37.jpg";
+import p38 from "../images/p38.jpg";
+import p39 from "../images/p39.jpg";
+import p40 from "../images/p40.jpg";
+import p41 from "../images/p41.jpg";
+import p42 from "../images/p42.jpg";
+import p43 from "../images/p43.jpg";
+import p44 from "../images/p44.jpg";
+import p45 from "../images/p45.jpg";
+import p46 from "../images/p46.jpg";
+import p47 from "../images/p47.jpg";
+import p48 from "../images/p48.jpg";
+import p49 from "../images/p49.jpg";
+import p50 from "../images/p50.jpg";
+import p51 from "../images/p51.jpg";
+import p52 from "../images/p52.jpg";
+import p53 from "../images/p53.jpg";
+import p54 from "../images/p54.jpg";
+import p55 from "../images/p55.jpg";
 
 function GallerypComponent({ scrollPosition }) {
   return (
@@ -110,6 +136,69 @@ function GallerypComponent({ scrollPosition }) {
             height={450}
             scrollPosition={scrollPosition}
           />
+          <LazyLoadImage
+            effect="blur"
+            src={p31}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p32}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p33}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p34}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p35}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p36}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p37}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p38}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p55}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
         </div>
         <div className="grid-two grid">
           <LazyLoadImage
@@ -182,6 +271,62 @@ function GallerypComponent({ scrollPosition }) {
             height={450}
             scrollPosition={scrollPosition}
           />
+          <LazyLoadImage
+            effect="blur"
+            src={p39}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p40}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p41}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p42}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p43}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p44}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p45}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p46}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
         </div>
         <div className="grid-three grid">
           <LazyLoadImage
@@ -243,6 +388,69 @@ function GallerypComponent({ scrollPosition }) {
           <LazyLoadImage
             effect="blur"
             src={p28}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p30}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p47}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p48}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p49}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p50}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p51}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p52}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p53}
+            width={300}
+            height={450}
+            scrollPosition={scrollPosition}
+          />
+          <LazyLoadImage
+            effect="blur"
+            src={p54}
             width={300}
             height={450}
             scrollPosition={scrollPosition}
