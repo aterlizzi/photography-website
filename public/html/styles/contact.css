@@ -199,6 +199,9 @@ h5 {
   font-weight: 500;
   letter-spacing: 1px;
 }
+.return-btn:focus {
+  outline: none;
+}
 @media (max-width: 1018px) {
   .return-btn {
     top: 42.5%;
