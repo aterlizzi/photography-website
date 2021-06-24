@@ -22,13 +22,13 @@ function FooterComponent() {
         </div>
         <div className="product-container">
           <h4>Product</h4>
-          <a href="/graduation">
+          <a href="/portfolio/graduation">
             <p>Graduation</p>
           </a>
-          <a href="/portrait">
+          <a href="/portfolio/portraits">
             <p>Portraits</p>
           </a>
-          <a href="/sport">
+          <a href="/portfolio/sports">
             <p>Sports</p>
           </a>
         </div>

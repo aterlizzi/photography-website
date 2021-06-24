@@ -16,7 +16,7 @@ import "./styles/portfolio.css";
 function App() {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "./nav.js";
+    script.src = "/nav.js";
     script.async = true;
     document.body.appendChild(script);
   }, []);

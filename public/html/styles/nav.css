@@ -157,7 +157,7 @@ nav ul .main-list .drop-container .drop-dn:hover {
 
 .mnav-container {
   display: none;
-  background-color: white;
+  background-color: var(--clr-primary-light);
   position: absolute;
   z-index: 2;
   top: 0;
@@ -171,7 +171,7 @@ nav ul .main-list .drop-container .drop-dn:hover {
 }
 
 .mnav-mdivider {
-  background-color: white !important;
+  background-color: var(--clr-primary-light) !important;
   height: 120px;
   width: 100%;
   text-align: center;
@@ -182,7 +182,7 @@ nav ul .main-list .drop-container .drop-dn:hover {
 }
 
 .menu-bottom-divider {
-  background-color: white;
+  background-color: var(--clr-primary-light);
   height: 100%;
   width: 100%;
 }
@@ -214,7 +214,7 @@ nav ul .main-list .drop-container .drop-dn:hover {
 .menu-divider {
   width: 100%;
   height: 1px;
-  background-color: whitesmoke;
+  background-color: lightgrey;
   text-align: center;
 }
 

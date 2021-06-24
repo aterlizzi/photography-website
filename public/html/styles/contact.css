@@ -126,7 +126,6 @@ h5 {
   );
 }
 .header-container {
-  /* background: red; */
   margin-top: 8em;
   width: 70%;
 }
@@ -176,6 +175,35 @@ h5 {
 #submit:hover {
   background: #adadad;
 }
+.wrapper {
+  position: relative;
+}
+.message {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.return-btn {
+  padding: 0.2em 1em;
+  outline: none;
+  border: none;
+  border-radius: 2em;
+  background: #929e89;
+  position: absolute;
+  top: 37.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #eeeeee;
+  font-family: "Alegreya", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+@media (max-width: 1018px) {
+  .return-btn {
+    top: 42.5%;
+  }
+}
 @media only screen and (max-width: 870px) {
   .form-container {
     width: 90%;
@@ -204,13 +232,28 @@ h5 {
     );
   }
 }
+@media (max-width: 519px) {
+  .return-btn {
+    top: 47.5%;
+  }
+}
 @media only screen and (max-width: 450px) {
-  .form-container,
+  .form-container {
+    width: 90%;
+    align-self: flex-start;
+  }
   .header-container {
-    width: 100%;
+    width: 90%;
+    align-self: start;
+    padding: 0;
   }
   .contact-div {
     padding-left: 1em;
+  }
+}
+@media (max-width: 401px) {
+  .return-btn {
+    top: 50%;
   }
 }
 @media only screen and (max-width: 370px) {

@@ -41,6 +41,7 @@ function CalendarComp({ month, handleExitClick, year }) {
                         minDate={checkMonth()}
                         maxDate={new Date(year, monthNum + 1, 0)}
                         showNavigation={false}
+                        calendarType="US"
                     />
                     <p className="directions dark-light">Click on a date above to see the available appointments! Then click on an appointment time below or to the right to begin booking.</p>
                 </div>

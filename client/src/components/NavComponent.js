@@ -47,23 +47,23 @@ function NavComponent() {
         <div className="list-container">
           <ul className="mobile-menu">
             <li>
-              <a href="#">Portfolio</a>
+              <a href="/portfolio">Portfolio</a>
               <i className="fas fa-angle-right arrowOne"></i>
             </li>
             <ul className="sub-menu-one" id="menu-one">
               <li className="sub-link">
-                <a href="/graduation">Graduation</a>
+                <a href="/portfolio/graduation">Graduation</a>
               </li>
               <li className="sub-link">
-                <a href="/portrait">Portrait</a>
+                <a href="/portfolio/portraits">Portrait</a>
               </li>
               <li className="sub-link">
-                <a href="/sport">Sport</a>
+                <a href="/portfolio/sports">Sport</a>
               </li>
             </ul>
             <div className="menu-divider"></div>
             <li>
-              <a href="#">Info</a>
+              <a href="/faq">Info</a>
               <i className="fas fa-angle-right arrowTwo"></i>
             </li>
             <ul className="sub-menu-two" id="menu-two">

@@ -14,9 +14,9 @@ function footerComponent() {
                     </div>
                     <div className="product-container">
                             <h4>Product</h4>
-                            <a href="/graduation"><p>Graduation</p></a>
-                            <a href="/portrait"><p>Portraits</p></a>
-                            <a href="/sport"><p>Sports</p></a>
+                            <a href="/portfolio/graduation"><p>Graduation</p></a>
+                            <a href="/portfolio/portraits"><p>Portraits</p></a>
+                            <a href="/portfolio/sports"><p>Sports</p></a>
                     </div>
                     <div className="resources-container">
                         <h4>Resources</h4>
