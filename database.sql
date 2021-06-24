@@ -1,7 +1,0 @@
-CREATE DATABASE kdb;
-
-CREATE TABLE contacts(
-    id SERIAL PRIMARY KEY NOT NULL,
-    full_name VARCHAR(70) NOT NULL,
-    email VARCHAR(70) NOT NULL
-);

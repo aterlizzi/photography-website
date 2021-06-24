@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 
 const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December'];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 const api = axios.create();
 const timeRegex = /(?<= )[\d]\d?:\d\d/;
@@ -18,22 +18,28 @@ function Day({ value, year }) {
     const[yearNum, setYearNum] = useState('');
     const [monthName, setMonthName] = useState('');
     const [state, setState] = useState([]);
+    const isFirstRender = useRef(true);
 
 
     useEffect(() => {
-        const newEvent = new Date(value);
-        const finalEvent = new Date(newEvent.setDate(newEvent.getDate() + 1));
-        api.post('/booking', {
-            startDate: value.toISOString(),
-            endDate: finalEvent        
-        }).then((response) => {
-            if(!response.data){
-                return setState([]);
-            }
-            return setState(response.data.availabilities);
-        }, (error) => {
-            console.error(error);
-        })
+        if (isFirstRender.current){
+            isFirstRender.current = false;
+        } else {
+            const newEvent = new Date(value);
+            const finalEvent = new Date(newEvent.setDate(newEvent.getDate() + 1));
+            console.log(value)
+            api.post('/booking', {
+                startDate: value.toISOString(),
+                endDate: finalEvent        
+            }).then((response) => {
+                if(!response.data){
+                    return setState([]);
+                }
+                return setState(response.data.availabilities);
+            }, (error) => {
+                console.error(error);
+            })
+        }
     }, [value])
 
 
@@ -43,7 +49,6 @@ function Day({ value, year }) {
         setMonthName(months[value.getMonth()]);
         setYearNum(year);
     }, [value, year])
-
 
 
 
@@ -58,7 +63,7 @@ function Day({ value, year }) {
                 <p>9:00 AM to 12:00 PM</p>
                 <div className="am-container grid">
                     {
-                        state.filter(obj => parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 12 && parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) > 8).map(filterObj => (
+                        state.filter(obj => parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 12 && parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) > 8 && new Date(obj.startAt).getDate() === dayNum).map(filterObj => (
                             <Link to={{
                                 pathname: '/booking/auth/',
                                 state: {
@@ -76,14 +81,14 @@ function Day({ value, year }) {
                         ))
                     }
                     {
-                        state.filter(obj => parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 12 && parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) > 8).length === 0 ? (<div className="empty-text"><p>No available appointments during this time.</p></div>) : (null)
+                        state.filter(obj => parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 12 && parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) > 8 && new Date(obj.startAt).getDate() === dayNum).length === 0 ? (<div className="empty-text"><p>No available appointments during this time.</p></div>) : (null)
                     }
                 </div>
                 <h4 className="mont-font">Evening</h4>
                 <p>12:00 PM to 4:00 PM</p>
                 <div className="pm-container grid">
                     {
-                        state.filter(obj => parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) >= 12 || parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 9).map(filterObj => (
+                        state.filter(obj => (parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) >= 12 && new Date(obj.startAt).getDate() === dayNum) || (parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 9 && new Date(obj.startAt).getDate() === dayNum)).map(filterObj => (
                             <Link to={{
                                 pathname: '/booking/auth/',
                                 state: {
@@ -101,7 +106,7 @@ function Day({ value, year }) {
                         )) 
                     }
                                         {
-                        state.filter(obj => parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) >= 12 || parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 9).length === 0 ? (<div className="empty-text"><p>No available appointments during this time.</p></div>) : (null)
+                        state.filter(obj => (parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) >= 12 && new Date(obj.startAt).getDate() === dayNum) || (parseInt(new Date(obj.startAt).toLocaleString().match(hourRegex)) < 9 && new Date(obj.startAt).getDate() === dayNum)).length === 0 ? (<div className="empty-text"><p>No available appointments during this time.</p></div>) : (null)
                     }
                 </div>
             </div>

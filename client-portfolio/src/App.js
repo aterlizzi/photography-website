@@ -26,11 +26,11 @@ function App() {
       <>
         <NavComponent />
         <Switch>
-          <Route path='/' exact component={Portraits}/>
-          <Route path='/portraits' exact component={Portraits}/>
-          <Route path='/graduation' exact component={Graduation}/>
-          <Route path='/sports' exact component={Sports}/>
-          <Route path='/' render={() => <div>Error 404: Page not found.</div>}/>
+          <Route path='/portfolio/' exact component={Portraits}/>
+          <Route path='/portfolio/portraits' exact component={Portraits}/>
+          <Route path='/portfolio/graduation' exact component={Graduation}/>
+          <Route path='/portfolio/sports' exact component={Sports}/>
+          <Route path='/portfolio/' render={() => <div>Error 404: Page not found.</div>}/>
         </Switch>
         <FooterComponent />
       </>

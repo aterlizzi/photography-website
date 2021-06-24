@@ -9,9 +9,9 @@ function GraduationComponent() {
                 <header className="sort-header">
                     <h1 className="title">Choose the Portfolio</h1>
                     <ul className="sort-list">
-                        <Link to="/portraits" className="link"><li>Portraits</li></Link>
-                        <Link to="/graduation" className="link"><li style={{color: '#929e89', fontWeight: '500'}}>Graduation</li></Link>
-                        <Link to="/sports" className="link"><li>Sports</li></Link>
+                        <Link to="/portfolio/portraits" className="link"><li>Portraits</li></Link>
+                        <Link to="/portfolio/graduation" className="link"><li style={{color: '#929e89', fontWeight: '500'}}>Graduation</li></Link>
+                        <Link to="/portfolio/sports" className="link"><li>Sports</li></Link>
                     </ul>
                 </header>
             </section>

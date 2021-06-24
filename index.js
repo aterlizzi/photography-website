@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 5000;
-const pool = require('./db');
+const pool = require('./utils/db');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
@@ -15,8 +15,7 @@ const createBooking = require('./bookings/create-booking');
 const JSONbig = require('json-bigint');
 
 const { body, validationResult } = require('express-validator');
-const { allowedNodeEnvironmentFlags, getMaxListeners } = require('process');
-const { text } = require('body-parser');
+
 
 app.listen(PORT, () => {
     console.log(`App listening on ${PORT}!`)
@@ -34,14 +33,26 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 // ROUTES
-app.get('/contact', (req, res) => {
+app.get('/contact', (_, res) => {
     res.render('contact', { default: true });
 });
-app.get('/testimonials', (req, res) => {
+app.get('/testimonials', (_, res) => {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 })
-app.get('/booking', (req, res) => {
+app.get('/booking', (_, res) => {
     res.sendFile(path.join(__dirname, 'client-booking/booking/build', 'index.html'))
+})
+app.get('/portfolio', (_, res) => {
+    res.sendFile(path.join(__dirname, 'client-portfolio/build', 'index.html'))
+})
+app.get('/portfolio/portraits', (_, res) => {
+    res.sendFile(path.join(__dirname, 'client-portfolio/build', 'index.html'))
+})
+app.get('/portfolio/graduation', (_, res) => {
+    res.sendFile(path.join(__dirname, 'client-portfolio/build', 'index.html'))
+})
+app.get('/portfolio/sports', (_, res) => {
+    res.sendFile(path.join(__dirname, 'client-portfolio/build', 'index.html'))
 })
 
 // ROUTES for booking.
@@ -110,8 +121,8 @@ app.post('/contact/sent', body('email').isEmail().normalizeEmail(), body('name')
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'austyn.gusikowski@ethereal.email', // generated ethereal user
-            pass: 'URFcgU5SXbXWfvX93Z', // generated ethereal password
+            user: process.env.EMAIL_USER, // generated ethereal user
+            pass: process.env.EMAIL_PASS, // generated ethereal password
         },
         tls: {
             rejectUnauthorized: false
@@ -119,7 +130,7 @@ app.post('/contact/sent', body('email').isEmail().normalizeEmail(), body('name')
     });
     // send email to the form submiter
     let options = {
-        from: "austyn.gusikowski@ethereal.email",
+        from: process.env.EMAIL_USER,
         to: email,
         subject: subject,
     }
@@ -160,8 +171,8 @@ app.post('/contact/sent', body('email').isEmail().normalizeEmail(), body('name')
     });
     // send mail to me.
     const options2 = {
-        from: "austyn.gusikowski@ethereal.email",
-        to: "acterlizzi@hotmail.com",
+        from: process.env.EMAIL_USER,
+        to: process.env.EMAIL_ADMIN,
         subject: subject + ' from ' + name,
         text: message
     }
@@ -188,6 +199,9 @@ app.use(express.static(path.join(__dirname, 'client/build'), {
     extensions: ['html', ''],
 }))
 app.use(express.static(path.join(__dirname, 'client-booking/booking/build'), {
+    extensions: ['html', ''],
+}))
+app.use(express.static(path.join(__dirname, 'client-portfolio/build'), {
     extensions: ['html', ''],
 }))
 

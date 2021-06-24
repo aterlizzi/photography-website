@@ -1,243 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <title>FAQ | Kaitlyn Fulmore | Photographer</title>
-    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/nav.css" />
     <!-- footer css -->
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- burger css -->
-    <link rel="stylesheet" href="./styles/burger.css">
-    <link rel="stylesheet" href="./styles/faq.css">
+    <link rel="stylesheet" href="./styles/burger.css" />
+    <link rel="stylesheet" href="./styles/faq.css" />
 
     <!-- font awesome import -->
-    <script src="https://kit.fontawesome.com/d777cd8cbd.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d777cd8cbd.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <!-- beginning of nav -->
-    <nav class="myNav">
-        <ul>
-            <!-- portfolio dropdown container -->
-            <div class="portfolio-dp">
-                <li><a id="dp-dn1" href="#"><span class="nav-span">Portfolio</span></a></li>
-                <div class="portfolio-content" id='pfc'>
-                    <a class="dp-link" href="/graduation">Graduation</a>
-                    <a class="dp-link" href="/portrait">Portrait</a>
-                    <a class="dp-link" href="/sport">Sport</a>
-                </div>
-            </div>  
-            <!-- info dropdown container -->
-            <div class="info-dp">
-                <li><a id="dp-dn2" href="#"><span class="nav-span">Info</span></a></li>
-                <div class="info-content" id="ic">
-                    <a class="dp-link" href="/investment">Investment</a>
-                    <a class="dp-link" href="/testimonials">Testimonials</a>
-                    <a class="dp-link" href="/faq">FAQ</a>
-                    <a class="dp-link" href="/booking">Booking</a>
-                </div>
-            </div>
-            <div class="nav-header"><a href="/"><h3>Fulmore <br>Photography</h3></a></div>
-            <li class="nav-about"><a href="/about"><span class="nav-span">About Me</span></a></li>
-            <li><a href="/contact"><span class="nav-span">Contact</span></a></li>
-        </ul>
-        <!-- burger -->
-        <div class="burger-background"></div>
-            <div id="burger" class="burger burger-squeeze">
-                <div class="burger-lines"></div>
-            </div>
-    </nav>
-    <!-- end of nav -->
-    <!-- beginning of mobile nav design on toggle -->
-    <div class="mnav-container" id="mnav-container">
-        <div class="mnav-mdivider">
-            <a href="/"><h3>Fulmore <br>Photography</h3></a>
-        </div>
-        <div class="list-container">
-            <ul class="mobile-menu">
-                <li><a href="#">Portfolio</a><i class="fas fa-angle-right arrowOne"></i></li>
-                <ul class="sub-menu-one" id="menu-one">
-                    <li class="sub-link"><a href="/graduation">Graduation</a></li>
-                    <li class="sub-link"><a href="/portrait">Portrait</a></li>
-                    <li class="sub-link"><a href="/sport">Sport</a></li>
-                </ul>
-                <div class="menu-divider"></div>
-                <li><a href="#">Info</a><i class="fas fa-angle-right arrowTwo"></i></li>
-                <ul class="sub-menu-two" id="menu-two">
-                    <li class="sub-link-two"><a href="/investment">Investment</a></li>
-                    <li class="sub-link-two"><a href="/testimonials">Testimonials</a></li>
-                    <li class="sub-link-two"><a href="/faq">FAQ</a></li>
-                    <li class="sub-link-two"><a href="/booking">Booking</a></li>
-                </ul>
-                <div class="menu-divider"></div>
-                <li><a href="/about">About Me</a></li>
-                <div class="menu-divider"></div>
-                <li><a href="/contact">Contact</a></li>
-                <div class="menu-bottom-divider"></div>
+    <nav>
+      <ul class="flex-row">
+        <li class="main-list">
+          <div class="drop-container">
+            <a class="special-link link portfolio" href="/portfolio"
+              >Portfolio</a
+            >
+            <ul id="p-dn" class="drop-dn">
+              <li class="sub-list">
+                <a href="/portfolio/portraits">Portraits</a>
+              </li>
+              <li class="sub-list">
+                <a href="/portfolio/graduation">Graduation</a>
+              </li>
+              <li class="sub-list"><a href="/portfolio/sports">Sports</a></li>
             </ul>
-        </div>
+          </div>
+        </li>
+        <li class="main-list">
+          <div class="drop-container">
+            <a class="special-link link info" href="/faq">Info</a>
+            <ul id="i-dn" class="drop-dn">
+              <li class="sub-list"><a href="/investment">Investment</a></li>
+              <li class="sub-list"><a href="/testimonials">Testimonials</a></li>
+              <li class="sub-list"><a href="/faq">FAQ</a></li>
+              <li class="sub-list"><a href="/booking">Booking</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-list special">
+          <a class="link" href="/"
+            ><span class="header">Fulmore Photography</span></a
+          >
+        </li>
+        <li class="main-list">
+          <a class="special-link link" href="/about">About</a>
+        </li>
+        <li class="main-list">
+          <a class="special-link link" href="/contact">Contact</a>
+        </li>
+      </ul>
+      <div class="burger-background"></div>
+      <div id="burger" class="burger burger-squeeze">
+        <div class="burger-lines"></div>
+      </div>
+    </nav>
+    <div class="mnav-container" id="mnav-container">
+      <div class="mnav-mdivider">
+        <a href="/">
+          <h3>
+            Fulmore <br />
+            Photography
+          </h3>
+        </a>
+      </div>
+      <div class="list-container">
+        <ul class="mobile-menu">
+          <li>
+            <a href="#">Portfolio</a>
+            <i class="fas fa-angle-right arrowOne"></i>
+          </li>
+          <ul class="sub-menu-one" id="menu-one">
+            <li class="sub-link">
+              <a href="/graduation">Graduation</a>
+            </li>
+            <li class="sub-link">
+              <a href="/portrait">Portrait</a>
+            </li>
+            <li class="sub-link">
+              <a href="/sport">Sport</a>
+            </li>
+          </ul>
+          <div class="menu-divider"></div>
+          <li>
+            <a href="#">Info</a>
+            <i class="fas fa-angle-right arrowTwo"></i>
+          </li>
+          <ul class="sub-menu-two" id="menu-two">
+            <li class="sub-link-two">
+              <a href="/investment">Investment</a>
+            </li>
+            <li class="sub-link-two">
+              <a href="/testimonials">Testimonials</a>
+            </li>
+            <li class="sub-link-two">
+              <a href="/faq">FAQ</a>
+            </li>
+            <li class="sub-link-two">
+              <a href="/booking">Booking</a>
+            </li>
+          </ul>
+          <div class="menu-divider"></div>
+          <li>
+            <a href="/about">About Me</a>
+          </li>
+          <div class="menu-divider"></div>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+          <div class="menu-bottom-divider"></div>
+        </ul>
+      </div>
     </div>
     <!-- end of all navs -->
     <div class="wrapper-center">
-        <section>
-            <div class="img-container center">
-                <img src="/images/faq_bg.jpg" alt="Woman with a focused facial expression striking a tennis ball during a tennis match.">
+      <section>
+        <div class="img-container center">
+          <img
+            src="/images/faq_bg.jpg"
+            alt="Woman with a focused facial expression striking a tennis ball during a tennis match."
+          />
+        </div>
+      </section>
+      <header class="center">
+        <h1 class="light">Frequently Asked Questions</h1>
+        <p class="light">
+          Here are a few of the questions I get the most. If you don't see
+          what's on your mind, reach out to me on the contact page.
+        </p>
+      </header>
+      <section class="questions center">
+        <h2 class="subject-title dark">Photos</h2>
+        <div class="questions-container">
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>When will I get my photos?</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
             </div>
-        </section>
-        <header class="center">
-            <h1 class="light">Frequently Asked Questions</h1>
-            <p class="light">Here are a few of the questions I get the most. If you don't see what's on your mind, reach out to me on the contact page.</p>
-        </header>
-        <section class="questions center">
-            <h2 class="subject-title dark">Photos</h2>
-            <div class="questions-container">
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>When will I get my photos?</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>How many photos do I receive and how can I get them?</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>Do you edit any of the photos?</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>Lorem ipsum dolor sit amet.</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>Lorem ipsum dolor sit amet.</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
             </div>
-            <h2 class="subject-title dark">Sessions</h2>
-            <div class="questions-container">
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>What if I need to reschedule?</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>What if the weather is horrible?</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>How many outfits can I wear?</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
-                <div class="card">
-                    <div class="top-container split container-padding"><h3>Lorem ipsum dolor sit amet.</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
-                <div class="card last">
-                    <div class="top-container split container-padding"><h3>Lorem ipsum dolor sit amet.</h3>
-                        <div class="btn">
-                            <div class="top-line"></div>
-                            <div class="btm-line"></div>
-                        </div>
-                    </div>
-                    <div class="bottom-container hidden container-padding"><p class="dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo quis laborum voluptatibus minus dolorum dolores itaque, voluptates ut facilis?</p></div>
-                </div>
+          </div>
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>How many photos do I receive and how can I get them?</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
             </div>
-        </section>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>Do you edit any of the photos?</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
+            </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
+            </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
+            </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="subject-title dark">Sessions</h2>
+        <div class="questions-container">
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>What if I need to reschedule?</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
+            </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>What if the weather is horrible?</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
+            </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>How many outfits can I wear?</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
+            </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-container split container-padding">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
+            </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+          <div class="card last">
+            <div class="top-container split container-padding">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <div class="btn">
+                <div class="top-line"></div>
+                <div class="btm-line"></div>
+              </div>
+            </div>
+            <div class="bottom-container hidden container-padding">
+              <p class="dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem nemo quis laborum voluptatibus minus dolorum dolores
+                itaque, voluptates ut facilis?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- start of footer -->
     <div id="footer" class="foot-container">
-        <div class="top-footer">
-            <div class="fulmore-container">
-                <a href="/"><h3>Fulmore <br>Photography</h3></a>
-                <div class="footer-info">
-                    <p><i class="fas fa-mobile-alt"></i> (540) 642-6906</p>
-                    <p><i class="fas fa-envelope"></i> fulmoreka@mymail.vcu.edu</p>
-                </div>
-            </div>
-            <div class="product-container">
-                    <h4>Product</h4>
-                    <a href="/graduation"><p>Graduation</p></a>
-                    <a href="/portrait"><p>Portraits</p></a>
-                    <a href="/sport"><p>Sports</p></a>
-            </div>
-            <div class="resources-container">
-                <h4>Resources</h4>
-                <a href="/testimonials"><p>Testimonials</p></a>
-                <a href="/investment"><p>Investment</p></a>
-                <a href="/faq"><p>FAQ</p></a>
-            </div>
-            <div class="company-container">
-                <h4>Company</h4>
-                <a href="/contact"><p>Contact Me</p></a>
-                <a href="/about"><p>About Me</p></a>
-                <a href="/booking"><p>Book Me</p></a>
-            </div>
+      <div class="top-footer">
+        <div class="fulmore-container">
+          <a href="/"
+            ><h3>Fulmore <br />Photography</h3></a
+          >
+          <div class="footer-info">
+            <p><i class="fas fa-mobile-alt"></i> (540) 642-6906</p>
+            <p><i class="fas fa-envelope"></i> fulmoreka@mymail.vcu.edu</p>
+          </div>
         </div>
-        <div class="bottom-footer">
-            <div class="left-bottom-container">
-                <p>Copyright 2021 Fulmore Photography</p>
-            </div>
-            <div class="right-bottom-container">
-                <a target= '_blank' href="https://instagram.com/fulmorephotography?igshid=15422guh3y3wv"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://twitter.com/gigglingkaitlyn?s=21" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                <i class="fab fa-facebook fa-2x"></i>
-                <a href="https://www.linkedin.com/in/kaitlyn-fulmore-73043a209" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-            </div>
+        <div class="product-container">
+          <h4>Product</h4>
+          <a href="/graduation"><p>Graduation</p></a>
+          <a href="/portrait"><p>Portraits</p></a>
+          <a href="/sport"><p>Sports</p></a>
         </div>
-    </div>  
+        <div class="resources-container">
+          <h4>Resources</h4>
+          <a href="/testimonials"><p>Testimonials</p></a>
+          <a href="/investment"><p>Investment</p></a>
+          <a href="/faq"><p>FAQ</p></a>
+        </div>
+        <div class="company-container">
+          <h4>Company</h4>
+          <a href="/contact"><p>Contact Me</p></a>
+          <a href="/about"><p>About Me</p></a>
+          <a href="/booking"><p>Book Me</p></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="left-bottom-container">
+          <p>Copyright 2021 Fulmore Photography</p>
+        </div>
+        <div class="right-bottom-container">
+          <a
+            target="_blank"
+            href="https://instagram.com/fulmorephotography?igshid=15422guh3y3wv"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://twitter.com/gigglingkaitlyn?s=21" target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <i class="fab fa-facebook fa-2x"></i>
+          <a
+            href="https://www.linkedin.com/in/kaitlyn-fulmore-73043a209"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </div>
 
     <!-- normal js -->
     <script src="./nav.js"></script>
     <script src="./faq.js"></script>
-
-</body>
+  </body>
 </html>

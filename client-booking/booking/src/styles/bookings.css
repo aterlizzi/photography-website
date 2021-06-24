@@ -1,247 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 
+:root {
+  --clr-primary-light: #eeeeee;
+  --clr-primary: #8c8c8c;
+  --clr-accent: #929e89;
+  --clr-accent-two: #a2c488;
+  --clr-accent-three: #d1e2c4;
 
-
-:root{
-    --clr-primary-light: #EEEEEE;
-    --clr-primary: #8c8c8c;
-    --clr-accent: #929e89;
-    --clr-accent-two: #a2c488;
-    --clr-accent-three: #D1E2C4;
-
-    --ff-primary: 'Alegreya', serif;
-    --ff-paragraph: 'Montserrat', sans-serif;
+  --ff-primary: "Alegreya", serif;
+  --ff-paragraph: "Montserrat", sans-serif;
 }
 
-
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    overflow-x: hidden;
-    background: var(--clr-primary-light);
-
+body {
+  overflow-x: hidden;
+  background: var(--clr-primary-light);
 }
-nav{
-    background: transparent !important;
+nav {
+  background: transparent !important;
 }
-section{
-    font-family: var(--ff-primary);
+section {
+  font-family: var(--ff-primary);
 }
-section p{
-    color: var(--clr-primary);
-    font-family: var(--ff-paragraph);
+section p {
+  color: var(--clr-primary);
+  font-family: var(--ff-paragraph);
 }
-section h1{
-    font-weight: 700;
-    letter-spacing: 1px;
-
-    
+section h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
 }
-section h2{
-    font-weight: 600;
-    letter-spacing: 2px;
+section h2 {
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 /* actionable classes */
-.clickable{
-    cursor: pointer;
+.clickable {
+  cursor: pointer;
 }
-.flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.disabled{
-    pointer-events: none;
+.disabled {
+  pointer-events: none;
 }
-.flex{
-    display: flex;
-    justify-content: space-between;
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
-.grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: .5em;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5em;
 }
-.circle{
-    border-radius: 50%;
-    width: 1em;
-    height: 1em;
-    border: solid var(--clr-primary-light) 1px;
-    transition: background 200ms ease-in-out;
+.circle {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  border: solid var(--clr-primary-light) 1px;
+  transition: background 200ms ease-in-out;
 }
-.light{
-    color: var(--clr-primary-light);
+.light {
+  color: var(--clr-primary-light);
 }
-.dark-light{
-    color: var(--clr-primary);
+.dark-light {
+  color: var(--clr-primary);
 }
-.mont-font{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+.mont-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
-.bold{
-    font-weight: 600;
+.bold {
+  font-weight: 600;
 }
-
+.flex-row {
+  display: flex;
+}
 /* elemental classes */
 
-.grid-container{
-    /* background: linear-gradient(180deg, rgba(238,238,238,1) 10%, rgba(209,226,196,1) 100%); */
-    background: var(--clr-primary-light);
-    padding: 10em 0em;
+.grid-container {
+  /* background: linear-gradient(180deg, rgba(238,238,238,1) 10%, rgba(209,226,196,1) 100%); */
+  background: var(--clr-primary-light);
+  padding: 10em 0em;
 }
-.header{
-    margin-bottom: 2em;
-    text-align: center;
+.header {
+  margin-bottom: 2em;
+  text-align: center;
 }
-.month-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-    width: min(90%, 70em);
+.month-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  width: min(90%, 70em);
 }
-.month-card{
-    border-radius: 1.5em;
-    background: white;
-    padding: 1em;
+.month-card {
+  border-radius: 1.5em;
+  background: white;
+  padding: 1em;
 }
-.calendar-container{
-    background: white;
-    width: min(90%, 60em);
-    display: flex;
-    flex-direction: column;
-    border-radius: 1em;
-    padding: 2em;
-    position: relative;
-    -webkit-box-shadow: 6px 6px 17px 4px rgba(0,0,0,0.13); 
-    box-shadow: 6px 6px 17px 4px rgba(0,0,0,0.13);
+.calendar-container {
+  background: white;
+  width: min(90%, 60em);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  padding: 2em;
+  position: relative;
+  -webkit-box-shadow: 6px 6px 17px 4px rgba(0, 0, 0, 0.13);
+  box-shadow: 6px 6px 17px 4px rgba(0, 0, 0, 0.13);
 }
-.month-container{
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: solid var(--clr-primary) 1px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+.month-container {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid var(--clr-primary) 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
 }
-.left-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.directions{
-    text-align: center;
-    padding-top: .75em;
+.directions {
+  text-align: center;
+  padding-top: 0.75em;
 }
-.exit-container{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
+.exit-container {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
 }
-.top{
-    width: 2px;
-    height: 30px;
-    background: var(--clr-primary);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
+.top {
+  width: 2px;
+  height: 30px;
+  background: var(--clr-primary);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
-.bottom{
-    width: 30px;
-    height: 2px;
-    background: var(--clr-primary);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
+.bottom {
+  width: 30px;
+  height: 2px;
+  background: var(--clr-primary);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
-.top-container{
-    margin-top: 2em;
-    padding: 1em 0em;
-    border-bottom: solid var(--clr-primary) 1px;
+.top-container {
+  margin-top: 2em;
+  padding: 1em 0em;
+  border-bottom: solid var(--clr-primary) 1px;
 }
-.day-name{
-    font-size: 1.5em;
-    padding-right: 15px;
+.day-name {
+  font-size: 1.5em;
+  padding-right: 15px;
 }
-.bottom-container{
-    padding: 1em;
-    border-radius: .5em;
+.bottom-container {
+  padding: 1em;
+  border-radius: 0.5em;
 }
-.bottom-container h4{
-    margin-top: 1em;
+.bottom-container h4 {
+  margin-top: 1em;
 }
-.time-card{
-    border-radius: .5em;
-    padding: 0 1em;
-    background: var(--clr-accent);
-    display: flex;
+.time-card {
+  border-radius: 0.5em;
+  padding: 0 1em;
+  background: var(--clr-accent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-card:hover .circle {
+  background: var(--clr-primary-light);
+}
+.time-card p {
+  transform: translateY(35%);
+}
+
+.month {
+  margin: 0.5em 0;
+}
+@media (min-width: 450px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 515px) {
+  .month-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 650px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .calendar-container {
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+  }
+  .left-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+  }
+  .month-container {
+    border: 0;
+  }
+  .day-container {
+    width: 50%;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-.time-card:hover .circle{
-    background: var(--clr-primary-light);
+@media (min-width: 815px) {
+  .month-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-.time-card p{
-    transform: translateY(35%);
-}
-
-.month{
-    margin: .5em 0;
-}
-@media (min-width: 450px){
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width: 515px){
-    .month-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width: 650px){
-    .grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media (min-width: 800px){
-    .calendar-container{
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
-    .left-container{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 40%;
-    }
-    .month-container{
-        border: 0;
-    }
-    .day-container{
-        width: 50%;
-    }
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width: 815px){
-    .month-grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media (min-width: 1000px){
-    .grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
