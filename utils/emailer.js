@@ -1,5 +1,7 @@
 const pool = require('./db');
 const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+dotenv.config();
 
 
 const emailer = (req) => {
