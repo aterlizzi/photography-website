@@ -16,6 +16,7 @@
 
 body {
   overflow-x: hidden;
+  position: relative;
   background: var(--clr-primary-light);
   font-family: var(--ff-paragraph);
 }

@@ -16,6 +16,7 @@
 /* start of css styling */
 body {
   overflow-x: hidden;
+  position: relative;
   background-color: #eeeeee !important;
 }
 .overflow-wrap {

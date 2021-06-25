@@ -1,167 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 
+:root {
+  --clr-primary-light: #eeeeee;
+  --clr-primary: #8c8c8c;
+  --clr-accent: #929e89;
+  --clr-accent-two: #a2c488;
+  --clr-accent-three: #d1e2c4;
 
-
-:root{
-    --clr-primary-light: #EEEEEE;
-    --clr-primary: #8c8c8c;
-    --clr-accent: #929e89;
-    --clr-accent-two: #a2c488;
-    --clr-accent-three: #D1E2C4;
-
-    --ff-primary: 'Alegreya', serif;
-    --ff-paragraph: 'Montserrat', sans-serif;
+  --ff-primary: "Alegreya", serif;
+  --ff-paragraph: "Montserrat", sans-serif;
 }
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    overflow-x: hidden;
-    font-family: var(--ff-primary);
-    color: var(--clr-accent);
-    background: var(--clr-primary-light);
-    line-height: 1.6;
-    font-size: 1em;
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: var(--ff-primary);
+  color: var(--clr-accent);
+  background: var(--clr-primary-light);
+  line-height: 1.6;
+  font-size: 1em;
 }
-.wrapper-center h3{
-    font-size: 1em;
-    font-weight: 700;
+.wrapper-center h3 {
+  font-size: 1em;
+  font-weight: 700;
 }
-.wrapper-center p{
-    font-size: 1em;
+.wrapper-center p {
+  font-size: 1em;
 }
-header p{
-    font-size: .9em !important;
-    margin-bottom: 2em;
+header p {
+  font-size: 0.9em !important;
+  margin-bottom: 2em;
 }
-h1{
-    font-size: 1.125em;
-    font-weight: 300;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+h1 {
+  font-size: 1.125em;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-.dark{
-    color: var(--clr-primary);
+.dark {
+  color: var(--clr-primary);
 }
-.light{
-    color: var(--clr-primary-light);
+.light {
+  color: var(--clr-primary-light);
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
-.split{
-    display: flex;
-    justify-content: space-between;
+.split {
+  display: flex;
+  justify-content: space-between;
 }
-.wrapper-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.wrapper-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.img-container img{
-    max-width: 100%;
+.img-container img {
+  max-width: 100%;
 }
-header{
-    width: min(100%, 71em);
-    background: var(--clr-accent);
-    font-family: var(--ff-paragraph);
-    padding-left: .5em;
-    padding-right: .5em;
+header {
+  width: min(100%, 71em);
+  background: var(--clr-accent);
+  font-family: var(--ff-paragraph);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
-.questions{
-    width: min(90%, 71em);
+.questions {
+  width: min(90%, 71em);
 }
-.questions-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.questions-container > * + *{
-    margin-top: 2em;
+.questions-container > * + * {
+  margin-top: 2em;
 }
-.subject-title{
-    margin: 1em 0;
+.subject-title {
+  margin: 1em 0;
 }
-.card{
-    width: min(90%, 70em);
-    padding: 1em;
-    border-radius: 10px;
-    background: white;
-    border: solid lightgrey 1px;
-    -webkit-box-shadow: 5px 4px 15px -5px rgba(0,0,0,0.10); 
-    box-shadow: 5px 4px 15px -5px rgba(0,0,0,0.10);
+.card {
+  width: min(90%, 70em);
+  padding: 1em;
+  border-radius: 10px;
+  background: white;
+  border: solid lightgrey 1px;
+  -webkit-box-shadow: 5px 4px 15px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 4px 15px -5px rgba(0, 0, 0, 0.1);
 }
-.last{
-    margin-bottom: 10em;
+.last {
+  margin-bottom: 10em;
 }
-.bottom-container{
-    border-top: solid lightgrey 1px;
+.bottom-container {
+  border-top: solid lightgrey 1px;
 }
-.container-padding{
-    padding: 1em;
+.container-padding {
+  padding: 1em;
 }
-
-
-
-
-
 
 /* button css */
 
-.btn{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: solid black 1px;
-    position: relative;
-    margin-left: 1em;
+.btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: solid black 1px;
+  position: relative;
+  margin-left: 1em;
 }
-.top-line, .btm-line{
-    background: black;
-    height: 1px;
-    width: 20px; 
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+.top-line,
+.btm-line {
+  background: black;
+  height: 1px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
-.top-line{
-    transform: translate(50%, -50%) rotate(90deg);
-    transition: transform ease-in 200ms;
+.top-line {
+  transform: translate(50%, -50%) rotate(90deg);
+  transition: transform ease-in 200ms;
 }
-.btn-open{
-    border: solid var(--clr-accent-two) 1px;
+.btn-open {
+  border: solid var(--clr-accent-two) 1px;
 }
-.btn-open .top-line, .btn-open .btm-line{
-    background: var(--clr-accent-two);
+.btn-open .top-line,
+.btn-open .btm-line {
+  background: var(--clr-accent-two);
 }
-.btn-open .top-line{
-    transform: translate(50%, -50%) rotate(0deg);
+.btn-open .top-line {
+  transform: translate(50%, -50%) rotate(0deg);
 }
 
 /* end of button css */
 
-@media (min-width: 640px){
-    h1{
-        font-size: 1.875em;
-    }
-    header{
-        padding: 0 2em;
-        -webkit-box-shadow: 5px 4px 30px -2px rgba(0,0,0,0.4); 
-        box-shadow: 5px 4px 30px -2px rgba(0,0,0,0.4);
-    }
-    header p{
-        font-size: 1em !important;
-    }
-    .wrapper-center h3{
-        font-size: 1.125em;
-    }
+@media (min-width: 640px) {
+  h1 {
+    font-size: 1.875em;
+  }
+  header {
+    padding: 0 2em;
+    -webkit-box-shadow: 5px 4px 30px -2px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 4px 30px -2px rgba(0, 0, 0, 0.4);
+  }
+  header p {
+    font-size: 1em !important;
+  }
+  .wrapper-center h3 {
+    font-size: 1.125em;
+  }
 }
-@media (min-width: 815px){
-    .img-container{
-        margin-top: 5rem;
-    }
+@media (min-width: 815px) {
+  .img-container {
+    margin-top: 5rem;
+  }
 }
