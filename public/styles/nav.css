@@ -21,10 +21,12 @@
 .flex-row {
   display: flex;
 }
-.wrapper-test {
+.nav-wrapper {
   overflow-x: hidden;
-  position: relative;
-  /* breaks mnav */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
 }
 nav {
   padding: 2em 8em 1em 8em;

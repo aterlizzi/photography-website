@@ -35,61 +35,63 @@ function NavComponent() {
           <div className="burger-lines"></div>
         </div>
       </nav>
-      <div className="mnav-container" id="mnav-container">
-        <div className="mnav-mdivider">
-          <a href="/">
-            <h3>
-              Fulmore <br />
-              Photography
-            </h3>
-          </a>
-        </div>
-        <div className="list-container">
-          <ul className="mobile-menu">
-            <li>
-              <a href="/portfolio">Portfolio</a>
-              <i className="fas fa-angle-right arrowOne"></i>
-            </li>
-            <ul className="sub-menu-one" id="menu-one">
-              <li className="sub-link">
-                <a href="/portfolio/graduation">Graduation</a>
+      <div className="nav-wrapper">
+        <div className="mnav-container" id="mnav-container">
+          <div className="mnav-mdivider">
+            <a href="/">
+              <h3>
+                Fulmore <br />
+                Photography
+              </h3>
+            </a>
+          </div>
+          <div className="list-container">
+            <ul className="mobile-menu">
+              <li>
+                <a href="/portfolio">Portfolio</a>
+                <i className="fas fa-angle-right arrowOne"></i>
               </li>
-              <li className="sub-link">
-                <a href="/portfolio/portraits">Portrait</a>
+              <ul className="sub-menu-one" id="menu-one">
+                <li className="sub-link">
+                  <a href="/portfolio/graduation">Graduation</a>
+                </li>
+                <li className="sub-link">
+                  <a href="/portfolio/portraits">Portrait</a>
+                </li>
+                <li className="sub-link">
+                  <a href="/portfolio/sports">Sport</a>
+                </li>
+              </ul>
+              <div className="menu-divider"></div>
+              <li>
+                <a href="/faq">Info</a>
+                <i className="fas fa-angle-right arrowTwo"></i>
               </li>
-              <li className="sub-link">
-                <a href="/portfolio/sports">Sport</a>
+              <ul className="sub-menu-two" id="menu-two">
+                <li className="sub-link-two">
+                  <a href="/investment">Investment</a>
+                </li>
+                <li className="sub-link-two">
+                  <a href="/testimonials">Testimonials</a>
+                </li>
+                <li className="sub-link-two">
+                  <a href="/faq">FAQ</a>
+                </li>
+                <li className="sub-link-two">
+                  <a href="/booking">Booking</a>
+                </li>
+              </ul>
+              <div className="menu-divider"></div>
+              <li>
+                <a href="/about">About Me</a>
               </li>
+              <div className="menu-divider"></div>
+              <li>
+                <a href="/contact">Contact</a>
+              </li>
+              <div className="menu-bottom-divider"></div>
             </ul>
-            <div className="menu-divider"></div>
-            <li>
-              <a href="/faq">Info</a>
-              <i className="fas fa-angle-right arrowTwo"></i>
-            </li>
-            <ul className="sub-menu-two" id="menu-two">
-              <li className="sub-link-two">
-                <a href="/investment">Investment</a>
-              </li>
-              <li className="sub-link-two">
-                <a href="/testimonials">Testimonials</a>
-              </li>
-              <li className="sub-link-two">
-                <a href="/faq">FAQ</a>
-              </li>
-              <li className="sub-link-two">
-                <a href="/booking">Booking</a>
-              </li>
-            </ul>
-            <div className="menu-divider"></div>
-            <li>
-              <a href="/about">About Me</a>
-            </li>
-            <div className="menu-divider"></div>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-            <div className="menu-bottom-divider"></div>
-          </ul>
+          </div>
         </div>
       </div>
     </>
