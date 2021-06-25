@@ -15,9 +15,10 @@
 }
 /* start of css styling */
 body {
-  overflow-x: hidden;
-  position: relative;
   background-color: #eeeeee !important;
+}
+.wrapper-test {
+  overflow-x: hidden;
 }
 .overflow-wrap {
   overflow-x: hidden;
