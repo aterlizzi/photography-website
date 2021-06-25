@@ -1,4 +1,4 @@
-const client = require('../utils/square-client');
+const client = require('./square-client');
 const { v4: uuidv4 } = require('uuid');
 
 

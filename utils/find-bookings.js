@@ -1,4 +1,4 @@
-const client = require('../utils/square-client');
+const client = require('./square-client');
 
 async function main([ startDate, endDate ]) {
     const avail = await searchAvail(startDate, endDate);

@@ -7,9 +7,9 @@ const path = require('path');
 const PORT = process.env.PORT || 5000;
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
-const bookings = require('./bookings/find-bookings');
-const createUser = require('./bookings/create-user');
-const createBooking = require('./bookings/create-booking');
+const bookings = require('./utils/find-bookings');
+const createUser = require('./utils/create-user');
+const createBooking = require('./utils/create-booking');
 const JSONbig = require('json-bigint');
 const emailer = require('./utils/emailer');
 
@@ -114,6 +114,9 @@ app.post('/contact/sent', body('email').isEmail().normalizeEmail(), body('name')
 
 
 // set a static folder
+app.use(express.static(path.join(__dirname, 'public'), {
+    extensions: ['html', ''],
+}));
 app.use(express.static(path.join(__dirname, 'public/html'), {
     extensions: ['html', ''],
 }));
