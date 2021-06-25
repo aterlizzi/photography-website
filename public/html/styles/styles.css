@@ -17,9 +17,7 @@
 body {
   background-color: #eeeeee !important;
 }
-.wrapper-test {
-  overflow-x: hidden;
-}
+
 .overflow-wrap {
   overflow-x: hidden;
 }

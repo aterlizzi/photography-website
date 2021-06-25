@@ -31,10 +31,6 @@ function App() {
         setRenderHeader(true);
     }
 
-
-
-    
-    
         useEffect(() => {
             const script = document.createElement('script');
             script.src = './nav.js';

@@ -7,8 +7,10 @@ const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Satur
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 const api = axios.create();
-const timeRegex = /(?<= )[\d]\d?:\d\d/;
-const hourRegex = /(?<= )[\d]\d?(?=:)/gm;
+// const timeRegex = /(?<= )[\d]\d?:\d\d/;
+const timeRegex = /[\d]\d?:\d\d/gm;
+// const hourRegex = /(?<= )[\d]\d?(?=:)/gm;
+const hourRegex = / [\d]\d?/gm;
 
 
 

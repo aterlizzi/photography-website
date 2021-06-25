@@ -21,6 +21,11 @@
 .flex-row {
   display: flex;
 }
+.wrapper-test {
+  overflow-x: hidden;
+  position: relative;
+  /* breaks mnav */
+}
 nav {
   padding: 2em 8em 1em 8em;
   background: var(--clr-primary-light);

@@ -29,7 +29,7 @@ async function searchAvail(startDate, endDate){
           }
         });
       
-        console.log(response.result);
+        console.log(new Date(response.result.availabilities[0].startAt).toLocaleString());
         return response.result;
       } catch(error) {
         return null;
